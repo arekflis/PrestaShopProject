@@ -1,0 +1,41 @@
+version: '3'
+services:
+  mysql:
+    container_name: some-mysql
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: prestashop
+    networks:
+      - prestashop_network
+    volumes:
+      - ./shop/mysql_data:/var/lib/mysql
+    ports:
+      - "3306"
+  prestashop:
+    container_name: prestashop
+    image: prestashop/prestashop:1.7.8
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - "8080:80"
+    environment:
+      DB_SERVER: some-mysql
+      DB_NAME: prestashop
+      DB_USER: root
+      DB_PASSWORD: admin
+      PS_DOMAIN: localhost:8080
+      PS_FOLDER_ADMIN: admin1337
+      PS_FOLDER_INSTALL: install1337
+      PS_LANGUAGE: pl 
+      PS_COUNTRY: PL
+      ADMIN_PASSWD: haslo1234
+    networks:
+      - prestashop_network
+    volumes:
+      - ./shop/prestashop_data:/var/www/html
+networks:
+  prestashop_network:
+
