@@ -168,16 +168,4 @@ shop/prestashop_data/var/sessions/*
 shop/prestashop_data/vendor/
 shop/prestashop_data/web/bundles/
 
-# Database
-shop/mysql_data/*
-shop/mysql_data/*.log
-shop/mysql_data/ib_logfile*
-shop/mysql_data/ibdata*
-shop/mysql_data/#sql*
-shop/mysql_data/*.pid
-shop/mysql_data/*.err
-shop/mysql_data/*.sock
-shop/mysql_data/*.frm
-shop/mysql_data/*.ibd
-shop/mysql_data/*.MYD
-shop/mysql_data/*.MYI
+
