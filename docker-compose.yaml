@@ -12,9 +12,10 @@ services:
       - ./shop/mysql_data:/var/lib/mysql
       - ./docker/db_init:/docker-entrypoint-initdb.d/
   prestashop:
-    build:
-      context: .
-      dockerfile: ./docker/Dockerfile
+    image: prestashop/prestashop:1.7.8
+    #build:
+      #context: .
+      #dockerfile: ./docker/Dockerfile
     container_name: prestashop
     restart: unless-stopped
     depends_on:
@@ -32,6 +33,6 @@ services:
       - prestashop_network
     volumes:
       - ./shop/prestashop_data:/var/www/html
-    command: ["bash", "-c", "wait-for-it.sh mysql:3306 -t 30 -- docker-php-entrypoint apache2-foreground"]
+    #command: ["bash", "-c", "wait-for-it.sh mysql:3306 -t 30 -- docker-php-entrypoint apache2-foreground"]
 networks:
   prestashop_network:
