@@ -1,0 +1,37 @@
+services:
+  mysql:
+    container_name: some-mysql
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: prestashop
+    networks:
+      - prestashop_network
+    volumes:
+      - ./shop/mysql_data:/var/lib/mysql
+      - ./docker/db_init:/docker-entrypoint-initdb.d/
+  prestashop:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    container_name: prestashop
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - 8080:80
+    environment:
+      DB_SERVER: some-mysql
+      DB_NAME: prestashop
+      DB_USER: root
+      DB_PASSWD: admin
+      PS_INSTALL_AUTO: 0
+      PS_DEV_MODE: 1 
+    networks:
+      - prestashop_network
+    volumes:
+      - ./shop/prestashop_data:/var/www/html
+    command: ["bash", "-c", "wait-for-it.sh mysql:3306 -t 30 -- docker-php-entrypoint apache2-foreground"]
+networks:
+  prestashop_network:
