@@ -1,8 +1,0 @@
-c7d3c8,172.18.0.1,GET,http://localhost:8080/admin8221h7ycl/index.php/modules/metrics/api/getShopData?_token=7t8F0rSxbXwdro7ml-cy9WE3nBuAQFR8cJqnRu-JSf0,1729702937,,200
-ad2477,172.18.0.1,POST,http://localhost:8080/admin8221h7ycl/index.php/common/notifications?_token=7t8F0rSxbXwdro7ml-cy9WE3nBuAQFR8cJqnRu-JSf0&rand=1729702937806,1729702937,,200
-679544,172.18.0.1,POST,http://localhost:8080/admin8221h7ycl/index.php/common/notifications?_token=7t8F0rSxbXwdro7ml-cy9WE3nBuAQFR8cJqnRu-JSf0&rand=1729702937819,1729702937,,200
-741b9e,172.18.0.1,POST,http://localhost:8080/admin-panel/index.php/common/notifications?_token=rdT9vmeRFuVQMROhVUPAbtborVGd5BU6Pm77U3RrD6A&rand=1729704047271,1729704046,,200
-07d9f7,172.18.0.1,GET,http://localhost:8080/admin-panel/index.php/modules/metrics/api/getShopData?_token=rdT9vmeRFuVQMROhVUPAbtborVGd5BU6Pm77U3RrD6A,1729704046,,200
-f64132,172.18.0.1,POST,http://localhost:8080/admin-panel/index.php/common/notifications?_token=rdT9vmeRFuVQMROhVUPAbtborVGd5BU6Pm77U3RrD6A&rand=1729704047282,1729704046,,200
-96590d,172.18.0.1,POST,http://localhost:8080/admin-panel/index.php/common/notifications?_token=rdT9vmeRFuVQMROhVUPAbtborVGd5BU6Pm77U3RrD6A&rand=1729704168191,1729704168,,200
-9b5005,172.18.0.1,POST,http://localhost:8080/admin-panel/index.php/common/notifications?_token=rdT9vmeRFuVQMROhVUPAbtborVGd5BU6Pm77U3RrD6A&rand=1729704168192,1729704168,,200

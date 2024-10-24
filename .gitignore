@@ -3,3 +3,13 @@ shop/mysql_data/
 
 # Install folder
 shop/prestashop_data/install
+
+db_backups/
+
+# Cache
+shop/prestashop_data/var/cache/dev/*
+!shop/prestashop_data/var/cache/dev/.gitkeep
+
+# Logs
+shop/prestashop_data/var/logs/*
+!shop/prestashop_data/var/logs/.gitkeep
