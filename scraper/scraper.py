@@ -40,7 +40,7 @@ def getAllCategories(url):
     else:
         print("Nie udało się pobrać strony:", response.status_code)
 
-def saveCategoriesToCSV(categories_dict, filename='scraping-results/categories.csv'):
+def saveCategoriesToCSV(categories_dict, filename='scraper/scraping-results/categories.csv'):
     with open(filename, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerow(["main-category", "subcategory"])
