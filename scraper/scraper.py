@@ -1,7 +1,6 @@
 from urllib.parse import urljoin
-
 import requests
-import csv
+import json
 from bs4 import BeautifulSoup
 
 
@@ -12,21 +11,21 @@ def addProductsFromPage(products, soup):
         if product.has_attr('title'):
             products.append(product['title'])
 
+
 def getProducts(pageUrl, subcategoryUrl):
     products = []
 
-    #pageURL - main page Gnom, subcategoryURL - first page subcategory
-    response = requests.get(f"{urljoin(pageUrl,subcategoryUrl)}")
+    # Pobranie strony podkategorii
+    response = requests.get(f"{urljoin(pageUrl, subcategoryUrl)}")
 
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
 
-        #add products from first page subcategory
+        # Dodanie produktów z pierwszej strony podkategorii
         addProductsFromPage(products, soup)
 
-        #get links to another pages of subcategory
+        # Znalezienie linków do kolejnych stron podkategorii
         nextSubpages = soup.find_all('li', class_='pagination__element --item')
-        #add products from another pages of subcategory
         for page in nextSubpages:
             newUrl = page.find('a', class_='pagination__link')
             if newUrl and newUrl.has_attr('href'):
@@ -37,12 +36,11 @@ def getProducts(pageUrl, subcategoryUrl):
                     addProductsFromPage(products, soup)
                 else:
                     print("Nie udało się pobrać strony z produktami:", response.status_code)
-                    exit(-1)
     else:
         print("Nie udało się pobrać strony z produktami:", response.status_code)
-        exit(-1)
 
     return products
+
 
 def getAllCategories(url):
     response = requests.get(url)
@@ -50,10 +48,10 @@ def getAllCategories(url):
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Create dictionary for categories and their subcategories
+        # Tworzenie słownika dla kategorii i ich podkategorii
         categoriesDictionary = {}
         
-        # Fid main categories (li.nav-item > a.nav-link nav-gfx)
+        # Znajdź główne kategorie
         mainCategories = soup.find_all('li', class_='nav-item')
         
         for mainCategory in mainCategories:
@@ -63,8 +61,7 @@ def getAllCategories(url):
                 mainCategoryName = mainLink['title']
                 subcategoriesDictionary = {}
 
-                
-                # Find subcategory within main category
+                # Znalezienie podkategorii w głównej kategorii
                 subcategoryLinks = mainCategory.find_all('a', class_='nav-link')
                 for subLink in subcategoryLinks:
                     if subLink.has_attr('title') and subLink['title'] != mainCategoryName:
@@ -77,26 +74,21 @@ def getAllCategories(url):
 
                 categoriesDictionary[mainCategoryName] = subcategoriesDictionary
 
-        for mainCategory, subcategories in categoriesDictionary.items():
-            print(f"Kategoria główna: {mainCategory}")
-            for subcategory, products in subcategories.items():
-                print(f"  - Podkategoria: {subcategory}")
-                for product in products:
-                    print(f"      - Produkt: {product}")
-                
+        # Zwracanie wyników w formie słownika
         return categoriesDictionary
     else:
         print("Nie udało się pobrać strony:", response.status_code)
+        return None
 
-def saveCategoriesToCSV(categories_dict, filename='scraping-results/categories.csv'):
-    with open(filename, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.writer(file)
-        writer.writerow(["main-category", "subcategory"])
-        for main_category, subcategories in categories_dict.items():
-            for subcategory, products in subcategories.items():
-                for product in products:
-                    writer.writerow([main_category, subcategory, product])
-    print(f'Zapisano kategorie i podkategorie do {filename}')
 
+# Change the filename depending on which level the script is being run
+def saveCategoriesToJSON(categories_dict, filename='scraper/scraping-results/categories.json'):
+    with open(filename, 'w', encoding='utf-8') as json_file:
+        json.dump(categories_dict, json_file, ensure_ascii=False, indent=4)
+    print(f'Zapisano dane do pliku {filename}')
+
+
+# Wywołanie funkcji i zapisanie wyników do pliku JSON
 categories = getAllCategories('https://gnom-sklep.pl/')
-saveCategoriesToCSV(categories)
+if categories:
+    saveCategoriesToJSON(categories)
