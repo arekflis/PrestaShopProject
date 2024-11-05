@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 PATH_TO_OUTPUT_FILE = 'scraping-results/categories.json'
 
 
-def getProductImage(productInformation, soup, urlMain):
+def getProductImages(productInformation, soup, urlMain):
     imgSources = soup.find_all(class_="photos__link")
     images = {}
     counter = 1
@@ -27,7 +27,7 @@ def getProductAttributes(productInformation, soup):
             if name and value:
                 productInformation[name.text] = value.text
 
-def getInformarionAboutProduct(products, soup, urlMain):
+def getInformationAboutProduct(products, soup, urlMain):
     productInformation = {}
 
     productName = soup.find('h1', class_='product_name__name m-0')
@@ -54,7 +54,7 @@ def getInformarionAboutProduct(products, soup, urlMain):
 
     getProductAttributes(productInformation, soup)
 
-    getProductImage(productInformation, soup, urlMain)
+    getProductImages(productInformation, soup, urlMain)
 
     products.append(productInformation)
 
@@ -71,7 +71,7 @@ def addProductsFromPage(products, soup, licznikProduktów, urlMain):
 
                 if response.status_code == 200:
                     soup = BeautifulSoup(response.text, 'html.parser')
-                    getInformarionAboutProduct(products, soup, urlMain)
+                    getInformationAboutProduct(products, soup, urlMain)
                 else:
                     print("Nie udało się wejść na stronę z produktu!", response.status_code)
             licznikProduktów += 1
