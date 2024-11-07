@@ -1,0 +1,20 @@
+{
+    "Logo": "imagesMainPage/logo/logo_1_big.png",
+    "Categories": {
+        "Gry bitewne": "imagesMainPage/categoriesLogos/1_1_i_2511_1_i_2511_1_i_25.jpg",
+        "Gry planszowe": "imagesMainPage/categoriesLogos/1_1_i_2531_1_i_2531_1_i_25.jpg",
+        "Gry karciane": "imagesMainPage/categoriesLogos/1_1_i_2521_1_i_2521_1_i_25.jpg",
+        "Gry RPG": "imagesMainPage/categoriesLogos/1_1_i_2541_1_i_2541_1_i_25.jpg",
+        "Dark Rabbit": "imagesMainPage/categoriesLogos/1_1_i_2561_1_i_2561_1_i_25.jpg",
+        "Akcesoria": "imagesMainPage/categoriesLogos/1_1_i_2551_1_i_2551_1_i_25.jpg",
+        "Albi": "imagesMainPage/categoriesLogos/1_1_i_2501_1_i_2501_1_i_25.jpg",
+        "PUZZLE": "imagesMainPage/categoriesLogos/1_1_i_4451_1_i_4451_1_i_44.jpg"
+    },
+    "Banners": {
+        "Promocja Inpost": "imagesMainPage/banners/1729593945.webp",
+        "Stormcast nowości": "imagesMainPage/banners/1728685514.webp",
+        "": "imagesMainPage/banners/1728117755.png",
+        "Kill Team Hivestorm": "imagesMainPage/banners/1726839573.svg",
+        "Army Painter ": "imagesMainPage/banners/1714132190.webp"
+    }
+}
