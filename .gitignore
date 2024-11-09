@@ -7,7 +7,7 @@ shop/prestashop_data/install
 docker/db_backups/
 
 # Cache
-shop/prestashop_data/var/cache/*
+shop/prestashop_data/var/cache/
 !shop/prestashop_data/var/cache/.gitkeep
 
 # Logs
