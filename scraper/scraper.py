@@ -119,13 +119,23 @@ def getProducts(pageUrl, subcategoryUrl):
 
     return products
 
+def getCategoriesWithoutSubcategories(soup):
+    categoriesWithoutSubcategories = []
+    subcategoriesLI = soup.find_all('li', class_='nav-item empty')
+    for subcategoryLI in subcategoriesLI:
+        subcategoryA = subcategoryLI.find('a')
+        if subcategoryA and subcategoryA.has_attr('title'):
+            categoriesWithoutSubcategories.append(subcategoryA['title'])
+    saveCategoriesToJSON(categoriesWithoutSubcategories, './scraping-results/categoriesWithoutSubcategories.json')
 
 def getAllCategories(url):
     response = requests.get(url)
     
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
-        
+        getCategoriesWithoutSubcategories(soup)
+            
+            
         # Tworzenie słownika dla kategorii i ich podkategorii
         categoriesDictionary = {}
         
@@ -151,11 +161,14 @@ def getAllCategories(url):
                         products = getProducts(url, subLink['href'])
                         subcategoriesDictionary[""] = products
                     categoriesDictionary[mainCategoryName] = subcategoriesDictionary
+        
+        
         # Zwracanie wyników w formie słownika
         return categoriesDictionary
     else:
         print("Nie udało się pobrać strony:", response.status_code)
         return None
+    
 
 
 def getLogoImage(soup, urlMainPage, mainPageDictionary):
