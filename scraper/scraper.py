@@ -128,14 +128,26 @@ def getCategoriesWithoutSubcategories(soup):
             categoriesWithoutSubcategories.append(subcategoryA['title'])
     saveCategoriesToJSON(categoriesWithoutSubcategories, './scraping-results/categoriesWithoutSubcategories.json')
 
+def getSubcategories(soup):
+    categiersAsSubcategoriesOnly = []
+    subcategoriesUL = soup.find_all('ul', class_='navbar-subsubnav')
+    for subcategoryUL in subcategoriesUL:
+        subcategoriesLI = subcategoryUL.find_all('li', class_='nav-item')
+        for subcategoryLI in subcategoriesLI:
+            subcategoryA = subcategoryLI.find('a')
+            if subcategoryA and subcategoryA.has_attr('title'):
+                categiersAsSubcategoriesOnly.append(subcategoryA['title'])
+    saveCategoriesToJSON(categiersAsSubcategoriesOnly, './scraping-results/subcategories.json')
+
 def getAllCategories(url):
     response = requests.get(url)
     
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
-        getCategoriesWithoutSubcategories(soup)
+        #getCategoriesWithoutSubcategories(soup)
+        getSubcategories(soup)
             
-            
+        '''
         # Tworzenie słownika dla kategorii i ich podkategorii
         categoriesDictionary = {}
         
@@ -168,6 +180,7 @@ def getAllCategories(url):
     else:
         print("Nie udało się pobrać strony:", response.status_code)
         return None
+    '''
     
 
 
@@ -261,9 +274,9 @@ def saveCategoriesToJSON(categories_dict, filename):
 
 # Wywołanie funkcji i zapisanie wyników do pliku JSON
 categories = getAllCategories('https://gnom-sklep.pl/')
-if categories:
-    saveCategoriesToJSON(categories, PATH_TO_OUTPUT_CATEGORIES_FILE)
+#if categories:
+#    saveCategoriesToJSON(categories, PATH_TO_OUTPUT_CATEGORIES_FILE)
 
-mainPage = scrapMainPage('https://gnom-sklep.pl/')
-if mainPage:
-    saveCategoriesToJSON(mainPage, PATH_TO_OUTPUT_MAINPAGE_FILE)
+#mainPage = scrapMainPage('https://gnom-sklep.pl/')
+#if mainPage:
+#    saveCategoriesToJSON(mainPage, PATH_TO_OUTPUT_MAINPAGE_FILE)
