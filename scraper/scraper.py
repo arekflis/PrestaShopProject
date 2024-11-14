@@ -3,9 +3,29 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import os
+from PIL import Image
 
 PATH_TO_OUTPUT_CATEGORIES_FILE = 'scraping-results/categories.json'
 PATH_TO_OUTPUT_MAINPAGE_FILE = 'scraping-results/mainPage.json'
+MAX_PRODUCTS = 20
+
+def convertWebpToPNG(imagePath):
+    if imagePath.lower().endswith(".webp"):
+        img = Image.open(imagePath)
+        
+        new_image_path = imagePath.replace(".webp", ".png")
+
+        img.save(new_image_path, "PNG")
+        
+        return new_image_path
+    return None
+
+def processPrice(price):
+    cleanPrice = price.replace(" PLN", "").replace(" ", "")
+    formattedPrice = float(cleanPrice.replace(",", "."))
+    nettoPrice = round(formattedPrice/1.23,2)
+    return f"{nettoPrice:.2f}"
+
 
 def getProductImages(productInformation, soup, urlMain):
     imgSources = soup.find_all(class_="photos__link")
@@ -22,14 +42,22 @@ def getProductImages(productInformation, soup, urlMain):
                 if imgFileName not in imgFileNames:
                     with open(f"images/{imgFileName}", "wb") as file:
                         file.write(response.content)
-                    images[f"Obraz {counter}"] = f"images/{imgFileName}"
-                    imgFileNames.append(imgFileName)
+                    newPath = convertWebpToPNG(f"images/{imgFileName}")
+                    os.remove(f"images/{imgFileName}")
+                    if newPath is not None and os.path.getsize(newPath) < 2 * 1024 * 1024:
+                        images[f"Obraz {counter}"] = newPath
+                        imgFileNames.append(imgFileName)
+                    else:
+                        os.remove(newPath)
             else:
                 print("Nie udało się zapisać obrazu!")
 
             counter += 1
-
-    productInformation["Obrazy"] = images
+    
+    if images:
+        productInformation["Obrazy"] = images
+    else:
+        productInformation["Obrazy"] = None
 
 def getProductAttributes(productInformation, soup):
     attributes = soup.find_all('div', class_='dictionary__param row mb-3')
@@ -51,7 +79,7 @@ def getInformationAboutProduct(soup, urlMain):
 
     price = soup.find('strong', class_='projector_prices__price')
     if price:
-        productInformation["Cena"] = price.text
+        productInformation["Cena"] = processPrice(price.text)
     else:
         productInformation["Cena"] = "None"
 
@@ -69,10 +97,13 @@ def getInformationAboutProduct(soup, urlMain):
 
     getProductImages(productInformation, soup, urlMain)
 
-    return productInformation
+    if productInformation['Obrazy'] is not None:
+        return productInformation
+    else:
+        return None
 
 
-def addProductsFromPage(products, soup, urlMain):
+def addProductsFromPage(products, soup, urlMain, counter):
     productItems = soup.find_all('a', class_='product__icon d-flex justify-content-center align-items-center')
 
     for product in productItems:
@@ -84,14 +115,21 @@ def addProductsFromPage(products, soup, urlMain):
             if response.status_code == 200:
                 soup = BeautifulSoup(response.text, 'html.parser')
                 productInformation = getInformationAboutProduct(soup, urlMain)
-                products[productName] = productInformation
+                if productInformation is not None and counter < MAX_PRODUCTS:
+                    products[productName] = productInformation
+                    counter += 1
+                if counter >= MAX_PRODUCTS:
+                    break
+            
             else:
                 print("Nie udało się wejść na stronę z produktu!", response.status_code)
 
+    return counter
 
 
 def getProducts(pageUrl, subcategoryUrl):
     products = {}
+    counter = 0
 
     # Pobranie strony podkategorii
     response = requests.get(f"{urljoin(pageUrl, subcategoryUrl)}")
@@ -100,7 +138,7 @@ def getProducts(pageUrl, subcategoryUrl):
         soup = BeautifulSoup(response.text, 'html.parser')
 
         # Dodanie produktów z pierwszej strony podkategorii
-        addProductsFromPage(products, soup, pageUrl)
+        counter = addProductsFromPage(products, soup, pageUrl, counter)
 
         # Znalezienie linków do kolejnych stron podkategorii
         nextSubpages = soup.find_all('li', class_='pagination__element --item')
@@ -111,7 +149,8 @@ def getProducts(pageUrl, subcategoryUrl):
 
                 if response.status_code == 200:
                     soup = BeautifulSoup(response.text, 'html.parser')
-                    addProductsFromPage(products, soup, pageUrl)
+                    if counter < MAX_PRODUCTS:
+                        counter = addProductsFromPage(products, soup, pageUrl, counter)
                 else:
                     print("Nie udało się pobrać strony z produktami:", response.status_code)
     else:
@@ -147,7 +186,7 @@ def getAllCategories(url):
         #getCategoriesWithoutSubcategories(soup)
         getSubcategories(soup)
             
-        '''
+        
         # Tworzenie słownika dla kategorii i ich podkategorii
         categoriesDictionary = {}
         
@@ -168,19 +207,21 @@ def getAllCategories(url):
                     if subLink.has_attr('title') and subLink['title'] != mainCategoryName:
                         subcategoryName = subLink['title']
                         products = getProducts(url, subLink['href'])
-                        subcategoriesDictionary[subcategoryName] = products
+                        if products:
+                            subcategoriesDictionary[subcategoryName] = products
                     elif subLink.has_attr('title') and subLink['title'] in ['Albi', 'PUZZLE']:
                         products = getProducts(url, subLink['href'])
-                        subcategoriesDictionary[""] = products
-                    categoriesDictionary[mainCategoryName] = subcategoriesDictionary
-        
-        
+                        if products:
+                            subcategoriesDictionary[""] = products
+                    if subcategoriesDictionary:
+                        categoriesDictionary[mainCategoryName] = subcategoriesDictionary
+
         # Zwracanie wyników w formie słownika
         return categoriesDictionary
     else:
         print("Nie udało się pobrać strony:", response.status_code)
         return None
-    '''
+    
     
 
 
@@ -274,9 +315,9 @@ def saveCategoriesToJSON(categories_dict, filename):
 
 # Wywołanie funkcji i zapisanie wyników do pliku JSON
 categories = getAllCategories('https://gnom-sklep.pl/')
-#if categories:
-#    saveCategoriesToJSON(categories, PATH_TO_OUTPUT_CATEGORIES_FILE)
+if categories:
+    saveCategoriesToJSON(categories, PATH_TO_OUTPUT_CATEGORIES_FILE)
 
-#mainPage = scrapMainPage('https://gnom-sklep.pl/')
-#if mainPage:
-#    saveCategoriesToJSON(mainPage, PATH_TO_OUTPUT_MAINPAGE_FILE)
+mainPage = scrapMainPage('https://gnom-sklep.pl/')
+if mainPage:
+    saveCategoriesToJSON(mainPage, PATH_TO_OUTPUT_MAINPAGE_FILE)
