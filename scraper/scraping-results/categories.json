@@ -2183,6 +2183,7 @@
                 }
             }
         },
+        "Warhammer: The Horus Heresy": {},
         "Loyalist Legiones Astartes": {
             "Cataphractii Terminator Squad": {
                 "Nazwa": "Cataphractii Terminator Squad",
@@ -3385,7 +3386,7 @@
             },
             "White Dwarf 486 - March 2023": {
                 "Nazwa": "White Dwarf 486 - March 2023",
-                "Cena": "12.03",
+                "Cena": "21.87",
                 "Opis": "None",
                 "Marka": "Games Workshop",
                 "Kod producenta": "5011921189403",
@@ -3412,7 +3413,7 @@
             },
             "White Dwarf 489": {
                 "Nazwa": "White Dwarf 489",
-                "Cena": "14.76",
+                "Cena": "26.83",
                 "Opis": "None",
                 "Marka": "Games Workshop",
                 "Symbol": "WD06-60",
@@ -3495,6 +3496,7 @@
                 }
             }
         },
+        "Middle Earth SBG": {},
         "Lord of the Rings Good": {
             "Haldir, Marchwarden of Lothlórien": {
                 "Nazwa": "Haldir, Marchwarden of Lothlórien",
@@ -4852,6 +4854,7 @@
                 }
             }
         },
+        "Warhammer: The Old World": {},
         "Kingdom of Bretonnia": {
             "Kingdom of Bretonnia Dice": {
                 "Nazwa": "Kingdom of Bretonnia Dice",
@@ -6228,6 +6231,7 @@
                 }
             }
         },
+        "Warhammer 40.000": {},
         "Warhammer Quest": {
             "Cursed City - Warhammer Quest": {
                 "Nazwa": "Cursed City - Warhammer Quest",
@@ -6781,6 +6785,7 @@
                 }
             }
         },
+        "Warhammer Age Of Sigmar": {},
         "WH AoS Akcesoria": {
             "AoS Paints + Tools 2021": {
                 "Nazwa": "AoS Paints + Tools 2021",
@@ -10737,6 +10742,19 @@
                     "Obraz 1": "images/pol_pl_Star-Wars-Unlimited-Spark-of-Rebellion-Two-Player-Starter-13807_1.png"
                 }
             },
+            "Star Wars: Unlimited - Shadows of the Galaxy: Booster Display (24 Booster) - EN": {
+                "Nazwa": "Star Wars: Unlimited - Shadows of the Galaxy: Booster Display (24 Booster) - EN",
+                "Cena": "331.63",
+                "Opis": "Enter a galaxy of endless possibilities in Star Wars™: Unlimited! In this fast-paced, easy-to-learn trading card game, you and your opponent face off in exciting head-to-head battles full of iconic Star Wars characters. In this booster pack display for the game’s first set, Shadows of the Galaxy, you’ll find 24 individually wrapped booster packs. Each pack contains 9 common cards, 3 uncommon cards, 1 rare or legendary card, 1 leader, 1 base/token, and 1 foil card.",
+                "Marka": "FANTASY FLIGHT GAMES",
+                "Symbol": "SWH0202",
+                "Kod producenta": "841333122294",
+                "Wersja językowa": "Angielska",
+                "Wiek gracza": "14+",
+                "Obrazy": {
+                    "Obraz 1": "images/pol_pl_Star-Wars-Unlimited-Shadows-of-the-Galaxy-Booster-Display-24-Booster-EN-14743_1.png"
+                }
+            },
             "Star Wars: Unlimited - Shadows of the Galaxy: Two-Player Starter - EN": {
                 "Nazwa": "Star Wars: Unlimited - Shadows of the Galaxy: Two-Player Starter - EN",
                 "Cena": "101.54",
@@ -10775,6 +10793,32 @@
                 "Obrazy": {
                     "Obraz 1": "images/pol_pl_Star-Wars-Unlimited-Twilight-of-the-Republic-Booster-Display-15231_1.png",
                     "Obraz 2": "images/pol_pl_Star-Wars-Unlimited-Twilight-of-the-Republic-Booster-Display-15231_2.png"
+                }
+            },
+            "Star Wars: Unlimited - Twilight of the Republic - Booster": {
+                "Nazwa": "Star Wars: Unlimited - Twilight of the Republic - Booster",
+                "Cena": "16.18",
+                "Opis": "Wejdź do galaktyki nieskończonych możliwości w Star Wars™: Unlimited! W tej szybkiej, łatwej do opanowania grze karcianej ty i twój przeciwnik zmierzycie się w ekscytujących pojedynkach pełnych kultowych postaci z Gwiezdnych Wojen. W tym zestawie promocyjnym do trzeciego zestawu gry, Twilight of the Republic, znajdziesz 24 indywidualnie zapakowane zestawy booster. \n\nKażde opakowanie zawiera 9 kart zwykłych, 3 karty rzadkie, 1 kartę rzadką lub legendarną, 1 lidera, 1 podstawkę/token i 1 kartę foliową.\nZestaw Twilight of the Republic podkreśla konflikty zbrojne między Republiką Galaktyczną a Konfederacją Niezależnych Systemów, z udziałem bohaterów i złoczyńców, którzy walczyli ze sobą podczas Wojen Klonów.",
+                "Marka": "FANTASY FLIGHT GAMES",
+                "Kod producenta": "841333122225",
+                "Wersja językowa": "Angielska",
+                "Wiek gracza": "14+",
+                "Obrazy": {
+                    "Obraz 1": "images/pol_pl_Star-Wars-Unlimited-Twilight-of-the-Republic-Booster-15565_2.png"
+                }
+            },
+            "Star Wars: Unlimited - Shadows of the Galaxy - Booster": {
+                "Nazwa": "Star Wars: Unlimited - Shadows of the Galaxy - Booster",
+                "Cena": "16.18",
+                "Opis": "Enter a galaxy of endless possibilities in Star Wars™: Unlimited! In this fast-paced, easy-to-learn trading card game, you and your opponent face off in exciting head-to-head battles full of iconic Star Wars characters. In this booster pack display for the game’s first set, Shadows of the Galaxy, you’ll find 24 individually wrapped booster packs. Each pack contains 9 common cards, 3 uncommon cards, 1 rare or legendary card, 1 leader, 1 base/token, and 1 foil card.",
+                "Marka": "FANTASY FLIGHT GAMES",
+                "Kod producenta": "841333122287",
+                "Wersja językowa": "Angielska",
+                "Wiek gracza": "14+",
+                "Obrazy": {
+                    "Obraz 1": "images/pol_pl_Star-Wars-Unlimited-Shadows-of-the-Galaxy-Booster-15567_1.png",
+                    "Obraz 2": "images/pol_pl_Star-Wars-Unlimited-Shadows-of-the-Galaxy-Booster-15567_2.png",
+                    "Obraz 3": "images/pol_pl_Star-Wars-Unlimited-Shadows-of-the-Galaxy-Booster-15567_3.png"
                 }
             }
         },
@@ -11682,7 +11726,7 @@
             },
             "Cyberpunk RED: Opowieści Czerwieni": {
                 "Nazwa": "Cyberpunk RED: Opowieści Czerwieni",
-                "Cena": "97.56",
+                "Cena": "93.41",
                 "Opis": "Opowieści Czerwieni to pełny nowych misji dodatek do Cyberpunk RED, najnowszej edycji legendarnej gry fabularnej opowiadającej o mrocznej przyszłości. W środku znajdziesz dziewięć zupełnie nowych scenariuszy, które możesz rozegrać ze swoją ekipą.",
                 "Marka": "Black Monk",
                 "Symbol": "9788367619059",
@@ -14566,7 +14610,7 @@
         "MidGuard Miniatures": {
             "Sigrunn The Viking 75mm scale": {
                 "Nazwa": "Sigrunn The Viking 75mm scale",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Sigrunn is a member of an elite marine corps called V.I.K.I.N.G.S. She is a cold-blooded professional who participates in special operations on alien, hostile planets. Oh, did we forget to mention her near 100% effectiveness?",
                 "Marka": "MIDGUARD MINIATURES",
                 "Symbol": "5904347465018",
@@ -14581,7 +14625,7 @@
             },
             "Einar The Berserker 1:10 Bust": {
                 "Nazwa": "Einar The Berserker 1:10 Bust",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Einar is a berserker towering above his fellow Midgardians due to his heritage - one of his ancestors was one of the Jotunns, commonly known as the ice giants. Einar is visibly taller and more muscular but at the same time - he doesn’t resemble a giant and well - he got lucky with that.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Symbol": "5904347465025",
@@ -14595,7 +14639,7 @@
             },
             "Sigrunn The Viking 1:10 Bust": {
                 "Nazwa": "Sigrunn The Viking 1:10 Bust",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Sigrunn from V.I.K.I.N.G.S",
                 "Marka": "MIDGUARD MINIATURES",
                 "Symbol": "5904347465087",
@@ -14609,7 +14653,7 @@
             },
             "Astrid The Volva 75mm scale": {
                 "Nazwa": "Astrid The Volva 75mm scale",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Behold Astrid, a powerful volva from Uppsala! On planet Midgard, volva is a kind of seeress whose job is connecting to the Yggdrasil, a Forbidden Network, looking for the visions of what the future can bring to anyone willing to pay a hefty sum for this knowledge. This includes private corporations, military leaders, or the mighty rulers of Midgard.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Symbol": "5904347465094",
@@ -14623,7 +14667,7 @@
             },
             "Astrid The Volva 1:10 Bust": {
                 "Nazwa": "Astrid The Volva 1:10 Bust",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Behold Astrid, a powerful volva from Uppsala! On planet Midgard, volva is a kind of seeress whose job is connecting to the Yggdrasil, a Forbidden Network, looking for the visions of what the future can bring to anyone willing to pay a hefty sum for this knowledge. This includes private corporations, military leaders, or the mighty rulers of Midgard.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Symbol": "5904347465100",
@@ -14638,7 +14682,7 @@
             },
             "Freya the Skald": {
                 "Nazwa": "Freya the Skald",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Collectible bust from Midguard universe. Limited to 200 copies, each box contains a miniature and authentication certificate with the number of the copy.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Symbol": "6054213589450",
@@ -14655,7 +14699,7 @@
             },
             "Thyra the Keeper of the Library": {
                 "Nazwa": "Thyra the Keeper of the Library",
-                "Cena": "123.40",
+                "Cena": "122.92",
                 "Opis": "Collectible bust from Midguard universe. Limited to 200 copies, each box contains a miniature and authentication certificate with the number of the copy.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Symbol": "6052214589851",
@@ -14672,7 +14716,7 @@
             },
             "Gunnar the Einher": {
                 "Nazwa": "Gunnar the Einher",
-                "Cena": "123.40",
+                "Cena": "122.92",
                 "Opis": "Gunnar the Einher was once a brave and loyal warrior who paid the ultimate price while defending a retreat from the hostile planet of Jotunheim. Against the odds and facing the fearsome Jotun, he stood his ground, vowing not to leave until the last of his comrades was safe. Tragically, this heroic act led to his death, but his courageous spirit didn't go unnoticed.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14686,7 +14730,7 @@
             },
             "Thori the Huskarl": {
                 "Nazwa": "Thori the Huskarl",
-                "Cena": "193.91",
+                "Cena": "193.16",
                 "Opis": "Thori the Huskarl is a living legend in the realm of Midgard, an enduring symbol of bravery and excellence. Her remarkable journey continues to inspire countless generations of warriors.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14700,7 +14744,7 @@
             },
             "Ingrid the Jeager": {
                 "Nazwa": "Ingrid the Jeager",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Enshrouded in mystery and bordering on the mythic, Ingrid the Jaeger's origins are veiled in the deepest shadows. Whispered legends tell of her rearing among the icy wolves of Midgard, lending a wild and ancient aura to her formidable presence.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Symbol": "MDG_MIN10",
@@ -14715,7 +14759,7 @@
             },
             "Torvi the Priestess": {
                 "Nazwa": "Torvi the Priestess",
-                "Cena": "186.85",
+                "Cena": "186.14",
                 "Opis": "Torvi the Priestess, in her deep devotion to god Tyr, has not only emulated his sacrifice by offering her own hand but also serves as a bridge between the divine and the technological advancements of AdvanTyr corp. As a priestess, she has exclusive access to the latest, often prototype, cybernetic implants, enhancing her capabilities and connection to the divine. Her sacrifice, mirroring Tyr's ordeal with Fenris, the monstrous wolf, symbolizes a profound commitment to her faith and role, intertwining her destiny with the lore and power of her deity. Through her enhanced abilities and spiritual connection, Torvi stands as a beacon of strength, resilience, and innovation, embodying the fusion of ancient traditions and futuristic technology.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14730,7 +14774,7 @@
             },
             "Thori the Huskarl 1:10 Bust": {
                 "Nazwa": "Thori the Huskarl 1:10 Bust",
-                "Cena": "197.43",
+                "Cena": "196.67",
                 "Opis": "Thori the Huskarl is a living legend in the realm of Midgard, an enduring symbol of bravery and excellence. Her remarkable journey continues to inspire countless generations of warriors.",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14742,7 +14786,7 @@
             },
             "Livia the Cosplayer 1:10 Bust": {
                 "Nazwa": "Livia the Cosplayer 1:10 Bust",
-                "Cena": "183.33",
+                "Cena": "182.63",
                 "Opis": "Livia the Cosplayer",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14751,7 +14795,7 @@
             },
             "Livia the Cosplayer": {
                 "Nazwa": "Livia the Cosplayer",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Livia the Cosplayer",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14760,7 +14804,7 @@
             },
             "Frida the Cultist 1:10 Bust": {
                 "Nazwa": "Frida the Cultist 1:10 Bust",
-                "Cena": "183.33",
+                "Cena": "182.63",
                 "Opis": "Frida the Cultist",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14778,7 +14822,7 @@
             },
             "Frida the Cultist Diorama": {
                 "Nazwa": "Frida the Cultist Diorama",
-                "Cena": "246.80",
+                "Cena": "245.85",
                 "Opis": "Frida the Cultist",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14790,7 +14834,7 @@
             },
             "Freya the Skald 75mm": {
                 "Nazwa": "Freya the Skald 75mm",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Freya the Skald, a well-known persona in the world of Midguard, stands out as an exceptional figure, choosing to captivate audiences with her raw, unenhanced voice. While many performers rely on vocal implants and stimulants to entertain, Freya's natural talent and expressiveness set her apart from the crowd.\n\nHer concerts are legendary, filled with wild performances that sweep the audience off their feet. Her music resonates with the very soul of Midguard, combining ancient melodies with a fresh, invigorating style. On stage, Freya is a force of nature, her passionate performances creating an electrifying atmosphere that leaves the audience begging for more.\n\nYet, Freya is more than just a singer. Behind the scenes, she is a cunning celebrity with immense influence. She handles the fame that precedes her with grace and cleverness, using her status not just for personal gain but also to navigate the intricate web of Midguard's society.\n\nHowever, there's a layer of mystery surrounding Freya's past. Rumors circulate that before she rose to stardom, she was a spy for the Odin Corporation. These whispers add an enigmatic dimension to her persona, making her an even more fascinating character.\n\nThrough her music, Freya the Skald continues to charm and inspire, her life's journey serving as an intriguing narrative that continues to unfold. And as she continues to make her mark in the world of Midguard, one thing is clear - Freya is a true icon, a beacon of authenticity and inspiration in a world dominated by technology.\n\nCollectible Miniature\nFrom the Midguard universe, this collectible miniature is limited to 200 copies. Each box contains a miniature and authentication certificate with the number of the copy.\n\nScale: full scale miniature 75mm\n\nMaterial: resin\n\nThe miniature is sold unpainted and unassembled.\n\nProject\nMarcin Grzegorzek & Bartosz Guzy\n\nConcept:\nBartosz Guzy\n\n3D sculpt:\nEduard Pérez Delgado",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14805,7 +14849,7 @@
             },
             "Gullveig the Reborn": {
                 "Nazwa": "Gullveig the Reborn",
-                "Cena": "176.28",
+                "Cena": "175.60",
                 "Opis": "Gullweig the Reborn is a legendary figure in the galaxy, known for her mastery of hekseri and her pivotal role in the catastrophic war between the Aesir and Vanir. Once a powerful volva from Vanaheim, she was sent to Asgard as an ambassador but was accused of espionage and sentenced to death. In a shocking display of her hekseri abilities, Gullweig survived execution by fire, rising from the flames three times before escaping through a portal, triggering a devastating conflict between the two civilizations.\n\nCenturies later, Gullweig’s legacy endures through her corporation, Gullweig Inc., which operates with influence and secrecy across the galaxy. Though it remains unclear if Gullweig herself still lives, her name symbolizes resilience, mystery, and the dangerous consequences of unchecked power, as her actions continue to shape the fate of civilizations.\n\nCollectible Miniature\nFrom the Midguard universe, this collectible miniature is limited to 200 copies. Each box contains a miniature and authentication certificate with the number of the copy.\n\nScale: full scale miniature 75mm\n\nMaterial: resin\n\nThe miniature is sold unpainted and unassembled.\n\nProject\nMarcin Grzegorzek & Bartosz Guzy\n\nConcept:\nBartosz Guzy\n\n3D sculpt:\nVictor Aguilar",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14818,7 +14862,7 @@
             },
             "Adela the Valkyrie": {
                 "Nazwa": "Adela the Valkyrie",
-                "Cena": "246.80",
+                "Cena": "245.85",
                 "Opis": "Adela the Valkyrie is a stunning and formidable warrior, created by Asgardian bioengineers through a series of genetic modifications on carefully selected Midgardian women. After rigorous genetic screenings, Adela was chosen and transported to the planet Valhalla, where she underwent transformation into a breathtakingly beautiful yet lethal machine of war. Her body was altered to halt the aging process, preserving her appearance and vitality indefinitely. With wings enabling her to fly or the ability to fuse with a spacecraft as if it were a living extension of herself, Adela embodies the perfect synthesis of beauty and battle prowess.\n\nAdela's reputation as a fierce and independent Valkyrie is known across Midguard, where she chose the path of freedom over serving in Asgardian elite strike forces. Her legend is spread through tales of her heroic deeds in distant star systems. However, her most enduring conflict is with her sworn enemy, Thurs the Troll. Their rivalry, forged through countless brutal encounters, highlights the clash between Adela’s graceful precision and Thurs’s raw, untamed strength. Together, they represent an ongoing battle between the forces of order and chaos in the world of Midguard.\n\nCollectible Miniature\nFrom the Midguard universe, this collectible miniature is limited to 200 copies. Each box contains a miniature and authentication certificate with the number of the copy.\n\nScale: full scale miniature 75mm\n\nMaterial: resin\n\nThe miniature is sold unpainted and unassembled with backdrop plint included.\n\nProject\nMarcin Grzegorzek \n\nConcept:\nPaulina Opak\n\n3D sculpt:\nStivens Trujillo Sanchez",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14831,7 +14875,7 @@
             },
             "Thurs the Troll 75mm": {
                 "Nazwa": "Thurs the Troll 75mm",
-                "Cena": "246.80",
+                "Cena": "245.85",
                 "Opis": "Thurs the Troll is a fearsome creation of Jotunheim’s genetic engineering, known for his immense strength and resilience. As a winter troll, Thurs is covered in thick fur, resembling a massive, bear-like creature built to survive in the harshest conditions. While lacking in intelligence, he more than makes up for it with brute force and remarkable endurance, traits that make him a formidable opponent. His humanoid form features exaggerated proportions, with a large head filled with massive teeth and long, powerful arms.\n\nThurs is the eternal rival of Valkyrie Adela, clashing with her in numerous fierce battles. His raw strength contrasts sharply with Adela’s precision and skill, and their rivalry has become legendary. Thurs’s unrelenting pursuit of vengeance against Adela fuels his every encounter, making him a symbol of untamed power and the relentless spirit of the Jotunheim trolls.\n\n\n\nCollectible Miniature\nFrom the Midguard universe, this collectible miniature is limited to 200 copies. Each box contains a miniature and authentication certificate with the number of the copy.\n\nScale: full scale miniature 75mm\n\nMaterial: resin\n\nThe miniature is sold unpainted and unassembled.\n\nProject\nMarcin Grzegorzek \n\nConcept:\nPaulina Opak\n\n3D sculpt:\nStivens Trujillo Sanchez",
                 "Marka": "MIDGUARD MINIATURES",
                 "Obrazy": {
@@ -14845,6 +14889,7 @@
         }
     },
     "Akcesoria": {
+        "Koszulki na karty": {},
         "Dragon Shield": {
             "Dragon Shield Classic Tangerine 100 szt": {
                 "Nazwa": "Dragon Shield Classic Tangerine 100 szt ",
@@ -16055,6 +16100,7 @@
                 }
             }
         },
+        "Narzędzia": {},
         "Army Painter": {
             "The Army Painter: Scorched Tuft": {
                 "Nazwa": "The Army Painter: Scorched Tuft",
@@ -16325,6 +16371,7 @@
                 }
             }
         },
+        "Pędzle": {},
         "Evoco": {
             "Evoco Brush 0 - AG4100": {
                 "Nazwa": "Evoco Brush 0 - AG4100",
@@ -16582,6 +16629,7 @@
                 }
             }
         },
+        "Podstawki": {},
         "Gamers Grass": {
             "Gamers Grass: Special tufts - 12 mm - Spikey Brown (Wild)": {
                 "Nazwa": "Gamers Grass: Special tufts - 12 mm - Spikey Brown (Wild)",
@@ -17043,6 +17091,7 @@
                 }
             }
         },
+        "Tufty": {},
         "Vallejo": {
             "Vallejo: Scenery - Wild Tuft - Dry Green (2 mm)x35": {
                 "Nazwa": "Vallejo: Scenery - Wild Tuft - Dry Green (2 mm)x35",

@@ -176,7 +176,11 @@ def getSubcategories(soup):
             subcategoryA = subcategoryLI.find('a')
             if subcategoryA and subcategoryA.has_attr('title'):
                 categiersAsSubcategoriesOnly.append(subcategoryA['title'])
+    
+    
     saveCategoriesToJSON(categiersAsSubcategoriesOnly, './scraping-results/subcategories.json')
+
+    return categiersAsSubcategoriesOnly
 
 def getAllCategories(url):
     response = requests.get(url)
@@ -184,7 +188,7 @@ def getAllCategories(url):
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, 'html.parser')
         #getCategoriesWithoutSubcategories(soup)
-        getSubcategories(soup)
+        categoriesAsSubcategoriesOnly = getSubcategories(soup)
             
         
         # Tworzenie słownika dla kategorii i ich podkategorii
@@ -207,11 +211,11 @@ def getAllCategories(url):
                     if subLink.has_attr('title') and subLink['title'] != mainCategoryName:
                         subcategoryName = subLink['title']
                         products = getProducts(url, subLink['href'])
-                        if products:
+                        if products or (subcategoryName not in categoriesAsSubcategoriesOnly and subcategoryName not in ["Farby", "Pudełka i walizki"]):
                             subcategoriesDictionary[subcategoryName] = products
                     elif subLink.has_attr('title') and subLink['title'] in ['Albi', 'PUZZLE']:
                         products = getProducts(url, subLink['href'])
-                        if products:
+                        if products or subcategoryName not in categoriesAsSubcategoriesOnly:
                             subcategoriesDictionary[""] = products
                     if subcategoriesDictionary:
                         categoriesDictionary[mainCategoryName] = subcategoriesDictionary
