@@ -1,0 +1,146 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+ #header{ 
+    background: white !important; 
+    display: flex;
+    justify-content: center;
+    max-height: 250px;
+    box-shadow: none;
+}
+
+#header .header-nav {
+    background-color: white !important;
+    border-bottom: none;
+    height: auto;
+    max-height: 200px;
+}
+
+#header .header-nav * {
+    background-color: white;
+}
+
+#header .header-nav .blockcart {
+    background-color: white;
+}
+
+
+#header-container {
+    max-width: 1140px;
+    max-height: 300px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr 0.5fr;
+}
+
+.row-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+} 
+
+
+#search-bar-div {
+    display: grid;
+    align-content: center;
+}
+
+.header-search-bar {
+    border: 1px solid #c4c7c8;
+    margin-left:10%;
+}
+
+#search-bar-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-input {
+    border: none;
+    padding: 10px;
+    width:100%;
+}
+
+#search-input:focus {
+    outline: none;
+}
+
+#search-icon {
+    padding-top: 0.5rem;
+    margin-right: 0.5rem;
+    color: black;
+}
+
+#header-login {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    margin-left: 1.5rem;
+}
+
+.text-underlined {
+    text-decoration: underline;
+    text-decoration-color: black;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+#gird-cell-login {
+    display: flex;
+    justify-content: center;
+    padding-top:1.25rem;
+}
+
+#_desktop_user_info {
+    padding-left: 1rem;
+}
+
+#flag-and-arrow {
+    display: flex;
+    justify-content: center;
+}
+
+#listy-zakupowe {
+    padding-top: 2px;
+    padding-left: 1rem;
+}
+
+#shopping-cart-div {
+    display: grid;
+    align-content: center;
+    color: black;
+}
+
+#shopping-cart-header {
+    padding-left: 1rem;
+}
+
+.header-nav * {
+    background-color: white !important;
+}
+
+#wrapper {
+    background-color: white;
+}
+
+#categories-div {
+    grid-row: 2;
+    grid-column: 1 / -1;
+}
+
+.featured-product-section h1 {
+    text-align: center;
+}
+
+/* Produkty w featuredproducts */
+.products {
+    display: flex;
+}
+
+.category-submenu {
+    width: 1140px !important;
+    margin-left: 26.5% !important;
+}
