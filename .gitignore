@@ -1,0 +1,15 @@
+# Database
+shop/mysql_data/
+
+# Install folder
+shop/prestashop_data/install
+
+docker/db_backups/
+
+# Cache
+shop/prestashop_data/var/cache/
+!shop/prestashop_data/var/cache/.gitkeep
+
+# Logs
+shop/prestashop_data/var/logs/*
+!shop/prestashop_data/var/logs/.gitkeep
