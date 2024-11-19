@@ -1,7 +1,7 @@
-/*
- * Custom code goes here.
- * A template should always ship with an empty custom.css
- */
+/* Google Material Icons */
+ @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+
+
  #header{ 
     background: white !important; 
     display: flex;
@@ -143,4 +143,105 @@
 .category-submenu {
     width: 1140px !important;
     margin-left: 26.5% !important;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333 !important;
+    transition: color 0.2s ease-out;
+}
+
+a:hover {
+    color: #2b77f3 !important;
+}
+
+.js-footer {
+    display: grid;
+    justify-content: center;
+}
+
+#footer-div {
+    max-width: 1140px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 1rem;
+}
+
+#information-div {
+    border: 1px solid #c4c7c8;
+    border-radius: 0 5px 5px 0;
+    /* padding: 30px 35px; */
+    font-family: Arial, sans-serif;
+    display: flex;
+    padding-top: 1rem;
+}
+
+footer h3 {
+    font-size:16px;
+}
+
+#footer-zamowienia-konto {
+    display: flex;
+    justify-content: center;
+    margin-left: 3rem;
+    /* margin-top: 1rem; */
+}
+
+.footer-table-div {
+    margin-left: 0.5rem;
+}
+
+.td-right {
+    padding-left: 10px;
+}
+
+.td-right-regulaminy {
+    padding-left: 20px;
+}
+
+#footer-contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+#client-information {
+    margin-left: 2rem;
+}
+
+.footer-table-div {
+    margin: 1rem;
+    font-size: 13px;
+}
+
+#idosell-div {
+    margin-top: 3rem;
+    display: flex;
+    align-items: baseline;
+}
+
+#footer-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #c4c7c8;
+    box-sizing: border-box;
+}
+
+#footer-contact-info {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, sans-serif !important;
+}
+
+#footer-contact-info a {
+    text-decoration: underline;
+}
+
+#footer-contact-info p {
+    color: #333;
 }

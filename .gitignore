@@ -1,6 +1,9 @@
 # Database
 shop/mysql_data/
 
+# Temporary images
+shop/prestashop_data/img/tmp
+
 # Install folder
 shop/prestashop_data/install
 
