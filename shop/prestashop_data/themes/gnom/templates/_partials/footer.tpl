@@ -132,18 +132,18 @@
         </tr>
         <tr>
         <td>
-          <a href="{$placeholder_link}">Sposoby płatności i prowizje</a>
+          <a href="https://localhost:8443/index.php?id_cms=5&controller=cms">Sposoby płatności i prowizje</a>
         </td>
         <td class="td-right-regulaminy">
-          <a href="{$placeholder_link}">Regulamin</a>
+          <a href="https://localhost:8443/index.php?id_cms=3&controller=cms">Regulamin</a>
         </td>
         </tr>
         <tr>
         <td>
-          <a href="{$placeholder_link}">Polityka prywatności</a>
+          <a href="https://localhost:8443/index.php?id_cms=2&controller=cms">Polityka prywatności</a>
         </td>
         <td class="td-right-regulaminy">
-          <a href="{$placeholder_link}">Odstąpienie od umowy</a>
+          <a href="https://localhost:8443/index.php?id_cms=7&controller=cms">Odstąpienie od umowy</a>
         </td>
         </tr>
         <tr>
