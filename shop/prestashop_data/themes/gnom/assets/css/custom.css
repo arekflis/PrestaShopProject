@@ -434,3 +434,75 @@ footer h3 {
     font-size: 14px !important;
     color: #333 !important;
 }
+
+/* Categories page */
+
+.category-h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+}
+
+.category-h1-centered {
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.category-h1::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 20px;
+    background: #333;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.category-h1-centered::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 20px;
+    background: #333;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.container.category-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.subcategories-list-item {
+    border: 1px solid #c4c7c8;
+    border-radius: 5px;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.category-headline-center {
+    display: flex;
+    justify-content: center;
+}
+
+.category-headline {
+    display: flex;
+}
+
+.product-title {
+    font-family: "Arial", sans-serif;
+    font-size: 13px;
+}
+
+.category-products-price-quantity {
+    font-family: "Arial",sans-serif;
+    font-size: 11px;
+}

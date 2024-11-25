@@ -23,8 +23,10 @@
           <i class="material-icons keyboard_arrow_down">keyboard_arrow_down</i>
         </div>
         {widget name='ps_customersignin'}
+        <span style="display:flex">
         <p id="listy-zakupowe" class="text-underlined">Listy zakupowe</p>
         <i class="material-icons keyboard_arrow_down">keyboard_arrow_down</i>
+        </span>
       </div>
     </div>
     

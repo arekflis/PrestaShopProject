@@ -1,0 +1,1 @@
+{* Category tree is removed *}

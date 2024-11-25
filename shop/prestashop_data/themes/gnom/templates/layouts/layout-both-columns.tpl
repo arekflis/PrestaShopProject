@@ -57,12 +57,21 @@
         {/block}
 
         {hook h="displayWrapperTop"}
-        <div class="container">
-          {block name='breadcrumb'}
-            {include file='_partials/breadcrumb.tpl'}
-          {/block}
+        {if $page.page_name == 'category'}
+          <div class="container category-container">
+            {block name='breadcrumb'}
+              {include file='_partials/breadcrumb.tpl'}
+            {/block}
+        {else}
+          <div class="container">
+            {block name='breadcrumb'}
+              {include file='_partials/breadcrumb.tpl'}
+            {/block}
+        {/if}
 
-          {block name="left_column"}
+
+          {* Turn off left column *}
+          {*{block name="left_column"}
             <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
               {if $page.page_name == 'product'}
                 {hook h='displayLeftColumnProduct'}
@@ -70,7 +79,7 @@
                 {hook h="displayLeftColumn"}
               {/if}
             </div>
-          {/block}
+          {/block}*}
 
           {block name="content_wrapper"}
             <div id="content-wrapper" class="js-content-wrapper left-column right-column col-sm-4 col-md-6">
