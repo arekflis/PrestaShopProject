@@ -70,7 +70,7 @@ Shop database credentials:
 
 
 ## How to contribute
-After making changes in the PrestaShop database you can use the `dumpdb.sh` to crate an SQL database dump at `docker/db_init'.
+After making changes in the PrestaShop database you can use the `dumpdb.sh` to create an SQL database dump at `docker/db_init'.
 
 To run the script
 ```bash
