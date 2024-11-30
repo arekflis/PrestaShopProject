@@ -1,0 +1,26 @@
+.iti {
+    width: 100% !important;
+}
+
+.iti__flag {background-image: url("../../img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .iti__flag {background-image: url("../../img/flags@2x.png");}
+}
+
+.iti .iti__flag-container .iti__selected-flag {
+    background-color: transparent;
+    position: relative;
+    color: #7a7a7a;
+    font-family: Arial, sans-serif;
+}
+
+/* Create the right border using ::after pseudo-element */
+.iti .iti__flag-container .iti__selected-flag::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    background-color: #7a7a7a;
+    height: 45%;
+}

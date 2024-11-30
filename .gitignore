@@ -1,0 +1,23 @@
+# Database
+shop/mysql_data/
+
+# Temporary images
+shop/prestashop_data/img/tmp
+
+# Install folder
+shop/prestashop_data/install
+
+# Development temporary backup catalog
+docker/db_backups/
+
+# Cache
+shop/prestashop_data/var/cache/
+!shop/prestashop_data/var/cache/.gitkeep
+
+# Logs
+shop/prestashop_data/var/logs/*
+!shop/prestashop_data/var/logs/.gitkeep
+
+# Images
+shop/prestashop_data/img/p
+!shop/prestashop_data/img/p/.gitkeep

@@ -1,0 +1,67 @@
+/**
+ * NOTICE OF LICENSE
+ *
+ * @author    Mastercard Inc. www.mastercard.com
+ * @copyright Copyright (c) permanent, Mastercard Inc.
+ * @license   Apache-2.0
+ *
+ * @see       /LICENSE
+ *
+ * International Registered Trademark & Property of Mastercard Inc.
+ */
+
+.ctp-d-none {
+    display: none;
+}
+
+.alert.alert-warning:has(#clicktopay-banner) .close {
+    display: none;
+}
+
+.alert.alert-warning:has(#clicktopay-banner)::before {
+    top: 28px !important;
+}
+
+.alert.alert-success:has(#clicktopay-banner)::before {
+    top: 28px !important;
+}
+
+.clicktopay-banner-text {
+    margin-right: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: left;
+}
+
+.clicktopay-banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    padding-left: 0;
+}
+
+.clicktopay-banner-button {
+    white-space: nowrap;
+    font-size: 16px;
+    line-height: 15px;
+    text-align: left;
+    border: none;
+    background: none;
+
+    color: #25b9d7;
+}
+
+.clicktopay-banner-button:disabled {
+    cursor: not-allowed;
+}
+
+.clicktopay-banner-button:hover {
+    color: #1a8196;
+}
+
+.clicktopay-button-primary {
+    font-weight: 700;
+    margin-right: 32px;
+}

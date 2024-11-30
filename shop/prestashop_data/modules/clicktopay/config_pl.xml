@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>clicktopay</name>
+    <displayName><![CDATA[Click To Pay]]></displayName>
+    <version><![CDATA[1.0.4.1]]></version>
+    <description><![CDATA[Click to Pay to usprawnione, bezpieczne rozwiązanie do płatności online, zaprojektowane w celu uproszczenia płatności dla gości poprzez zmniejszenie punkt&oacute;w tarcia. Popraw konwersje i zmniejsz ryzyko oszustwa, umożliwiając zarejestrowanym klientom płacenie za pomocą zaledwie kilku kliknięć - bez konieczności ręcznego wprowadzania danych karty lub zapamiętywania haseł. Dostarczane przez Mastercard i obsługiwane przez wszystkie gł&oacute;wne sieci kart płatniczych (Mastercard, Visa, American Express i Discover)]]></description>
+    <author><![CDATA[PrestaShop Partners]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

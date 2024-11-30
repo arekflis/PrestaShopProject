@@ -1,0 +1,117 @@
+/**
+ * NOTICE OF LICENSE
+ *
+ * @author    Mastercard Inc. www.mastercard.com
+ * @copyright Copyright (c) permanent, Mastercard Inc.
+ * @license   Apache-2.0
+ *
+ * @see       /LICENSE
+ *
+ * International Registered Trademark & Property of Mastercard Inc.
+ */
+.clicktopay-express-checkout-container {
+    margin-top: 10px;
+}
+
+.express-checkout-button {
+    background-color: var(--mc-checkout-faster-button-background-color);
+    border: 1px solid var(--mc-checkout-faster-button-border-color);
+
+    display: inline-flex;
+    justify-content: center;
+    padding: 0.3rem 0.75rem;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 44px;
+    border-radius: 6px;
+
+    text-decoration: none;
+    -webkit-appearance: none !important;
+}
+
+.express-checkout-button:hover {
+    background-color: var(--mc-checkout-faster-button-hover-background-color);
+    border: 1px solid var(--mc-checkout-faster-button-hover-border-color);
+    color: var(--mc-checkout-faster-button-hover-text-color);
+
+    text-decoration: none;
+}
+
+.express-checkout-button:focus {
+    text-decoration: none;
+}
+
+.express-checkout-button-text {
+    color: var(--mc-checkout-faster-button-text-color);
+
+    white-space: nowrap;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: Inter;
+}
+
+.express-checkout-button-c2p {
+    color: var(--mc-checkout-faster-button-text-color);
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    gap: 5px;
+}
+
+.express-checkout-additional-text {
+    color: var(--mc-checkout-faster-button-additional-text-color);
+
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+    font-family: Inter;
+
+    margin-top: 8px;
+    text-align: center;
+}
+
+.mastercard-logo-separator:after {
+    content: " ";
+    background: var(--mc-checkout-faster-button-text-color);
+    width: 1px;
+    height: 15px;
+    display: flex;
+    margin-right: 2px;
+}
+
+.clicktopay-mastercard-logos-wrapper {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.mastercard-presented-card-container, .express-checkout-masked-digits-wrapper {
+    display: flex;
+    gap: 4px;
+    color: var(--mc-checkout-faster-button-text-color);
+}
+
+
+@media (max-width: 400px) {
+    .express-checkout-button {
+        flex-direction: row;
+        font-size: 15px;
+    }
+
+    .express-checkout-button-text{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .express-checkout-button {
+        font-size: 14px;
+    }
+
+    .express-checkout-button-text{
+        font-size: 14px;
+    }
+}

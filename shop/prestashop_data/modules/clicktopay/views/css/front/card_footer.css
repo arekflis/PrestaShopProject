@@ -1,0 +1,47 @@
+.mc_payment_form_footer {
+    text-align: center;
+    margin-top: 1rem;
+
+    background-color: var(--mc-footer-background-color);
+    color: var(--mc-footer-text-color);
+}
+
+.mc_payment_form_footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: var(--mc-footer-text-color);
+}
+
+.mc_payment_form_footer li {
+    font-family: SF Pro Text;
+    display: inline;
+    color: var(--mc-footer-text-color);
+    font-size: 10px;
+    line-height: 16px;
+    border-radius: 0 0 5px 5px;
+}
+.mc_payment_form_footer a {
+    color: var(--mc-footer-text-color);
+}
+
+.mc_payment_form_footer a:hover {
+    color: var(--mc-footer-text-color-hover);
+}
+
+.mc_payment_form_footer .separator {
+    margin: 0 10px;
+    font-size: xx-small;
+}
+
+.otp-form-container .mc_payment_form_footer {
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-radius: 0 0 5px 5px;
+}
+
+.card-loading-container .mc_payment_form_footer {
+    margin-top: 0;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+}

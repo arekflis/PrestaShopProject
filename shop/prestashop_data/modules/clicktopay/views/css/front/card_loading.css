@@ -1,0 +1,46 @@
+.card-loading-container {
+    background-color: var(--mc-container-background-color);
+    border: 1px solid var(--mc-container-border-color);
+    box-shadow: 0 2px 10px var(--mc-container-shadow-color);
+}
+
+.card-loading-container.dark {
+    background-color: var(--mc-container-background-color);
+    border: 1px solid var(--mc-container-border-color);
+    box-shadow: 0 2px 10px var(--mc-container-shadow-color);
+}
+
+.card-loading-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    min-height: inherit;
+
+    flex-direction: column;
+}
+
+#clicktopay-card-loading.active {
+    min-height: 374px;
+}
+
+.card-loading-img {
+    height: 58px;
+    width: 58px;
+    aspect-ratio: auto !important;
+}
+
+.card-loading-text {
+    color: var( --mc-loading-message-color);
+    text-align: center;
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    max-width: 261px;
+
+    margin-top: 25px;
+}

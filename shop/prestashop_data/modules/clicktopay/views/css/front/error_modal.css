@@ -1,0 +1,51 @@
+.clicktopay-error-modal {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0; /* Remove default margin to ensure full alignment */
+}
+
+.clicktopay-error-dialog {
+    max-width: 420px;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+
+    margin: 0 !important;
+}
+
+.clicktopay-error-content {
+    padding: 1.5rem !important;
+    border-radius: var(--mc-radius) !important;
+    width: 100%;
+
+    border: 1px solid rgba(0,0,0,.2) !important;
+
+    min-height: auto !important;
+}
+
+.clicktopay-error-header {
+    padding: 0;
+    border: none;
+    margin-bottom: 13px
+}
+
+.clicktopay-error-body {
+    padding: 0;
+    border: none;
+    height: 85px;
+}
+
+.clicktopay-error-footer {
+    padding: 0;
+    border: none;
+}
+
+.clicktopay-error-btn {
+    border-radius: 3px;
+    width: 100px;
+}

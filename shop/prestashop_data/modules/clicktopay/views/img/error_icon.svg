@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Ic_error" clip-path="url(#clip0_5050_8275)">
+<circle id="Oval" cx="8" cy="8" r="8" transform="matrix(-1 0 0 1 16 0)" fill="#D22A2F"/>
+<g id="i">
+<circle id="Oval_2" cx="0.775" cy="0.775" r="0.775" transform="matrix(-1 0 0 1 8.79999 10.4492)" fill="white"/>
+<rect id="Rectangle" width="1.5" height="6" rx="0.75" transform="matrix(-1 0 0 1 8.79999 3.44922)" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_5050_8275">
+<rect width="16" height="16" fill="white" transform="matrix(-1 0 0 1 16 0)"/>
+</clipPath>
+</defs>
+</svg>

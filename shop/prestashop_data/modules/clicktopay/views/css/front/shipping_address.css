@@ -1,0 +1,71 @@
+/**
+ * NOTICE OF LICENSE
+ *
+ * @author    Mastercard Inc. www.mastercard.com
+ * @copyright Copyright (c) permanent, Mastercard Inc.
+ * @license   Apache-2.0
+ *
+ * @see       /LICENSE
+ *
+ * International Registered Trademark & Property of Mastercard Inc.
+ */
+.clicktopay-shipping-address-container {
+    background-color: var(--mc-shipping-container-background);
+    border: 1px solid var(--mc-shipping-container-border);
+    margin: 1rem;
+    border-radius: var(--mc-radius);
+    padding: 1rem;
+}
+
+.clicktopay-shipping-address-container * {
+    color: var(--mc-shipping-container-description-color);
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+}
+
+.clicktopay-shipping-address-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.clicktopay-shipping-address-title {
+    color: var(--mc-shipping-container-title-color);
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    font-family: SF Pro Text;
+}
+
+.clicktopay-shipping-address-button {
+    color: var(--mc-shipping-container-edit-button-color);
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+
+    text-underline-offset: 3px;
+    text-decoration: underline;
+}
+
+.clicktopay-shipping-address-button:hover {
+    color: var(--mc-shipping-container-edit-button-hover-color) !important;
+
+    text-underline-offset: 3px;
+    text-decoration: underline;
+}
+
+.clicktopay-shipping-address-button:disabled {
+    color: var(--mc-shipping-container-edit-button-muted-color);
+}
+
+.clicktopay-shipping-address {
+    display: flex;
+    flex-flow: column;
+}

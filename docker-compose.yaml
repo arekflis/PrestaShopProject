@@ -1,0 +1,38 @@
+services:
+  mysql:
+    container_name: some-mysql
+    image: mysql:5.7
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: prestashop
+    networks:
+      - prestashop_network
+    volumes:
+      - ./docker/db_init:/docker-entrypoint-initdb.d/
+
+  prestashop:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    container_name: prestashop
+    restart: unless-stopped
+    depends_on:
+      - mysql
+    ports:
+      - 8080:80   # HTTP
+      - 8443:443  # HTTPS 
+    environment:
+      DB_SERVER: some-mysql
+      DB_NAME: prestashop
+      DB_USER: root
+      DB_PASSWD: admin
+      PS_INSTALL_AUTO: 0
+      PS_DEV_MODE: 1 
+    networks:
+      - prestashop_network
+    volumes:
+      - ./shop/prestashop_data:/var/www/html
+
+networks:
+  prestashop_network:

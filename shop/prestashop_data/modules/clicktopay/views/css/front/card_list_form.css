@@ -1,0 +1,454 @@
+.card-list-container {
+    background-color: var(--mc-container-background-color);
+    border: 1px solid var(--mc-container-border-color);
+    box-shadow: 0 2px 10px var(--mc-container-shadow-color);
+}
+
+.card-list-main {
+    padding: 1.5rem 1.5rem;
+}
+
+.card-list-consumer-channel {
+    color: var(--mc-consumer-channel-text-color);
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+
+    margin-right: 5px;
+}
+
+.card-list-not-you-button {
+    color: var(--mc-not-you-button-text-color);
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    border: none;
+
+    background-color: transparent;
+
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-skip-ink: none;
+
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+
+    white-space: nowrap;
+}
+
+.card-list-not-you-button:disabled {
+    color: var(--mc-not-you-button-muted-text-color);
+}
+
+.card-list-not-you-button:hover {
+    color: var(--mc-not-you-button-hover-text-color);
+
+    text-decoration: underline;
+}
+
+#card-list-dropdown{
+    font-family: SF Pro Text, sans-serif;
+    min-height: 48px;
+}
+
+.card-list-not-you-button:focus {
+    outline: none;
+}
+
+.card-list-title {
+    color: var(--mc-title-text-color);
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: SF Pro Text;
+
+    margin-bottom: 0.25rem;
+
+    text-transform: none;
+}
+
+.card-list-title-click-to-pay {
+    color: var(--mc-title-c2p-button-text-color);
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: SF Pro Text;
+
+    margin-bottom: 0.25rem;
+
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.card-list-title-click-to-pay:hover {
+    color: var(--mc-title-c2p-button-hover-text-color);
+}
+
+.card-list-description {
+    color: var(--mc-description-text-color);
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+}
+
+.card-list-dropdown {
+    position: relative
+}
+
+.card-list-dropdown-button {
+    background-color: var(--mc-dropdown-button-closed-background-color);
+    border: 1px solid var(--mc-dropdown-button-closed-border-color);
+    color: var(--mc-dropdown-button-open-text-color);
+
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    border-radius: var(--mc-radius);
+
+    padding: 0.6rem 0.8rem;
+
+    position: relative;
+    width: 100%;
+
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 500;
+    font-family: SF Pro Text;
+}
+
+.card-list-dropdown-button.show {
+    background-color: var(--mc-dropdown-button-open-background-color);
+    color: var(--mc-dropdown-button-open-text-color);
+
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.2), -1px 4px 6px 0px rgba(0, 0, 0, 0.2);
+    border: 1px solid transparent;
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    outline: 1px solid var(--mc-dropdown-button-open-border-color);
+}
+
+.card-list-dropdown-button.show:focus {
+    outline: 1px solid var(--mc-dropdown-button-open-border-color);
+}
+
+.card-list-dropdown-button:focus {
+    outline: 1px solid var(--mc-dropdown-button-closed-border-color);
+}
+
+.card-list-dropdown-button-full-card {
+    display: flex;
+    gap: 8px;
+}
+
+.card-list-dropdown-wrapper {
+    position: relative;
+    width: 100%
+}
+
+#js-clicktopay-payment-form .card-list-dropdown-content {
+    position: absolute;
+    max-height: calc(6 * 35px); /* showing only 6 cards at one point */
+}
+
+.card-list-dropdown-content {
+    background-color: var(--mc-dropdown-content-background-color);
+
+    position: fixed;
+
+    border-bottom-left-radius: var(--mc-radius);
+    border-bottom-right-radius: var(--mc-radius);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transform: translateY(0.5rem);
+    transition: all 0.1s cubic-bezier(0.16, 1, 0.5, 1);
+
+    overflow-y: auto;
+    max-height: calc(5 * 35px); /* showing only 6 cards at one point */
+    overflow: overlay;
+
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.2), -1px 4px 6px 0px rgba(0, 0, 0, 0.2);
+
+    width: 100%;
+
+    perspective: 1px;
+}
+
+/* Webkit (Chrome, Safari) */
+.card-list-dropdown-content::-webkit-scrollbar {
+    width: 13px;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+}
+
+.card-list-dropdown-content::-webkit-scrollbar-thumb {
+    width: 13px;
+    border: 4px solid transparent;
+    border-radius: 10px;
+    background-clip: padding-box;
+    background-color: #D6D6D6;
+}
+
+/* Firefox */
+.card-list-dropdown-content {
+    scrollbar-color: #D6D6D6 transparent;
+}
+
+.card-list-dropdown-content-card-option {
+    color: var(--mc-dropdown-content-card-option-text-color);
+
+    display: flex;
+    align-items: center;
+    user-select: none;
+    width: 100%;
+    padding: 0.6rem 20px 0.6rem 0.8rem;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 35px;
+
+    position: relative;
+
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+}
+
+.card-list-dropdown-content-card-option-card {
+    display: flex;
+    gap: 8px;
+}
+
+.card-list-dropdown-content-card-option.hovered:first-child {
+    border-top-left-radius: var(--mc-radius);
+    border-top-right-radius: var(--mc-radius);
+}
+
+.card-list-dropdown-content-card-option.hovered {
+    background-color: var(--mc-dropdown-content-card-option-hovered-background-color) !important;
+}
+
+.card-list-dropdown-content-card-option.selected {
+    background-color: var(--mc-dropdown-content-card-option-selected-background-color)
+}
+
+.card-list-dropdown-content-card-option-expired {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.card-list-dropdown-content-card-option.disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+.card-list-dropdown-content-card-option:last-child {
+    margin-bottom: 8px;
+}
+
+.card-list-dropdown-content-card-option-img {
+    width: 27px;
+    height: 18px;
+    align-self: center;
+}
+
+.card-list-dropdown-button-full-card-option-information-card, .card-list-dropdown-content-card-option-information-card,
+.card-list-dropdown-content-card-option-information-bank-card, .card-list-dropdown-button-full-card-option-information-bank-card
+{
+    color: var(--mc-title-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: SF Pro Text;
+}
+
+.card-list-dropdown-content-card-option-information {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: SF Pro Text;
+
+    margin: 0;
+}
+
+.card-list-dropdown-button-full-card-option-information-number, .card-list-dropdown-content-card-option-information-number {
+    color: var(--mc-line-text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: SF Pro Text;
+}
+
+.card-list-dropdown-button-full-card-option-img {
+    width: 27px;
+    height: 18px;
+    align-self: center;
+}
+
+.card-list-line {
+    border-bottom: 1px solid var(--mc-line-color);
+
+    text-align: center;
+    line-height: 0.1em;
+    margin: 10px 0 10px;
+}
+
+.card-list-line-text {
+    background-color: var(--mc-container-background-color);
+    color: var(--mc-line-text-color);
+
+    font-size: 12px;
+    line-height: 0 !important;
+    font-weight: 400;
+    font-family: SF Pro Text;
+
+    width: 100%;
+
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+
+.clicktopay-opc .card-list-manual-card-entry-button {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.card-list-manual-card-entry-button {
+    background-color: var(--mc-manual-card-entry-button-background-color);
+    color: var(--mc-manual-card-entry-button-text-color);
+
+    border: 1px solid var(--mc-manual-card-entry-button-border-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--mc-radius);
+    padding: 0.75rem 2rem;
+
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    font-family: SF Pro Text;
+
+    width: 100%;
+}
+
+.card-list-manual-card-entry-button:hover {
+    background-color: var(--mc-manual-card-entry-button-hover-background-color);
+    color: var(--mc-manual-card-entry-button-hover-text-color);
+
+    border: 1px solid var(--mc-manual-card-entry-button-hover-border-color);
+}
+
+.card-list-manual-card-entry-button:disabled {
+    background-color: var(--mc-manual-card-entry-button-muted-background-color);
+    color: var(--mc-manual-card-entry-button-muted-text-color);
+
+    border: 1px solid var(--mc-manual-card-entry-button-muted-border-color);
+
+    pointer-events: none;
+}
+
+.card-list-dropdown-button-empty-card span{
+    color: #979797;
+    font-weight: 400;
+    font-family: SF Pro Text;
+    
+    font-size: 13px;
+    line-height: 19px;
+    align-self: center;
+}
+
+.card-list-email-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+@media (max-width: 530px) {
+    .card-list-dropdown-content-card-option-information-bank-card, .card-list-dropdown-button-full-card-option-information-bank-card {
+        display: none;
+    }
+
+    .card-list-dropdown-button-full-card-option-information-card, .card-list-dropdown-content-card-option-information-card {
+        display: contents;
+    }
+}
+
+@media (min-width: 531px) {
+    .card-list-dropdown-button-full-card-option-information-card, .card-list-dropdown-content-card-option-information-card {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .card-list-dropdown-button-full-card-option-information-card, .card-list-dropdown-content-card-option-information-card {
+        display: none;
+    }
+}
+
+@media (max-width: 445px) {
+    .card-list-title-wrapper {
+        flex-direction: column;
+    }
+
+    .card-list-title-click-to-pay {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:360px)  {
+    #js-clicktopay-payment-form .card-list-main {
+        padding: 1rem 0.5rem;
+    }
+
+    .card-list-title {
+        font-size: 15px;
+    }
+
+    .card-list-title-click-to-pay {
+        font-size: 17px;
+        line-height: 12px;
+    }
+
+    .card-list-email-container {
+        flex-direction: column;
+    }
+
+    .card-list-not-you-button{
+        margin-left: 0;
+    }
+}

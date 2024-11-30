@@ -1,0 +1,66 @@
+.clicktopay-c2p-modal {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.c2p-link {
+    border: none; !important;
+}
+
+.c2p-modal-body {
+    width: 100%;
+    padding: 0;
+}
+
+.c2p-modal-content {
+    height: 100%;
+    width: 330px;
+    border-radius: 12px !important;
+    padding: 0px 0px 18px 10px !important;
+    border: 1px solid rgba(0,0,0,.2) !important;
+    min-height: auto !important;
+}
+
+.c2p-modal-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - (30px*2));
+    justify-content: center;
+}
+
+.c2p-button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Assuming you want the button to fill the height of the wrapper */
+}
+
+.c2p-modal-dialog {
+    justify-content: center;
+}
+
+.c2p-modal-btn {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 12px 120px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.c2p-comment {
+   padding: 0;
+}
+
+.c2p-text-wrapper {
+    vertical-align: middle;
+    padding: 0;
+}
