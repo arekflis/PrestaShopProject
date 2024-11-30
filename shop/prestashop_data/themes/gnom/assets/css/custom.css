@@ -130,11 +130,20 @@
    grid-row: 2;
    grid-column: 1 / -1;
    position: relative;
+   justify-self: center;
 }
 
 .featured-product-section h1 {
    text-align: center;
 }
+
+
+#header .menu>ul>li{
+   margin-left: 30px;
+   margin-right: 35px;
+   display: inline-block;
+}
+
 
 /* Produkty w featuredproducts */
 .products {

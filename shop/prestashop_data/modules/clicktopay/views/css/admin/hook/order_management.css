@@ -1,0 +1,139 @@
+/**
+ * NOTICE OF LICENSE
+ *
+ * @author    Mastercard Inc. www.mastercard.com
+ * @copyright Copyright (c) permanent, Mastercard Inc.
+ * @license   Apache-2.0
+ *
+ * @see       /LICENSE
+ *
+ * International Registered Trademark & Property of Mastercard Inc.
+ */
+
+.w-100 {
+    width: 100%;
+}
+
+.clicktopay-card-header {
+    padding: 10px;
+}
+
+.clicktopay-card-header-text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.clicktopay-card-body-content {
+    padding: 10px 10px 14px;
+}
+
+.clicktopay-card-body-description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.clicktopay-card-body-radio-group-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.clicktopay-card-body-radio-container {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: start;
+    flex: 1;
+}
+
+.clicktopay-card-body-radio-button {
+    height: 18px;
+    width: 18px;
+    flex-shrink: 0;
+}
+
+.clicktopay-card-body-radio-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.clicktopay-card-body-radio-content-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    text-align: left;
+}
+
+.clicktopay-card-body-radio-content-description {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+.clicktopay-card-body-refund-input-container {
+    margin-top: 16px;
+    padding: 0;
+}
+
+.clicktopay-card-body-refund-input-label {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+}
+
+.clicktopay-card-body-refund-input-group {
+    border-radius: 5px;
+}
+
+.clicktopay-card-body-refund-input {
+    height: 37px;
+}
+
+.clicktopay-card-body-refund-input-group-error {
+    border: 2px solid #D22A2F;
+}
+
+.clicktopay-card-body-refund-input-error {
+    margin-top: 8px;
+    display: none;
+}
+
+.clicktopay-card-body-refund-input-error-text {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #D22A2F;
+}
+
+.clicktopay-card-body-refund-button-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.clicktopay-card-body-refund-button {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: center;
+    border: none;
+    padding: 8px 0 8px 0;
+    width: 100%;
+
+    color: white;
+    background: #71858D;
+}
+
+.clicktopay-card-body-refund-button:disabled {
+    color: white;
+    background: #c6ced1;
+}

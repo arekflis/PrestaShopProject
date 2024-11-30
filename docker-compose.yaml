@@ -9,7 +9,6 @@ services:
     networks:
       - prestashop_network
     volumes:
-      #- ./shop/mysql_data:/var/lib/mysql
       - ./docker/db_init:/docker-entrypoint-initdb.d/
 
   prestashop:

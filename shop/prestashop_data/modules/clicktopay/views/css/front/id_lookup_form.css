@@ -1,0 +1,234 @@
+.id-lookup-container {
+    background-color: var(--mc-container-background-color);
+    border: 1px solid var(--mc-container-border-color);
+    box-shadow: 0 2px 10px var(--mc-container-shadow-color);
+}
+
+.id-lookup-main {
+    padding: 1.5rem;
+}
+
+.id-lookup-title {
+    color: var(--mc-title-text-color);
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: SF Pro Text;
+
+    margin-bottom: 0.25rem;
+
+    text-transform: none;
+}
+
+.id-lookup-description {
+    color: var(--mc-description-text-color);
+
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+}
+
+.id-lookup-input-error {
+    display: none;
+
+    color: #D22A2F;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 123.077% */
+    margin-top: 8px;
+}
+
+.id-lookup-form-group.error {
+    font-family: 'SF Pro Text';
+}
+
+.id-lookup-form-group.error .id-lookup-input-label  {
+    color: #E00;
+}
+
+.id-lookup-form-group.error .id-lookup-input  {
+    border: 2px solid #E00;
+    background-size: 16px;
+    background-image: url('../../img/error_icon.svg');
+    background-position: right 24px center;
+    background-repeat: no-repeat;
+    padding-right: 35px;
+}
+
+.id-lookup-form-group.error .id-lookup-input-error  {
+    display: block;
+}
+
+.id-lookup-input-label {
+    color: var(--mc-input-label-text-color);
+
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+}
+
+.id-lookup-input {
+    background-color: var(--mc-input-background-color);
+    color: var(--mc-input-text-color);
+    border: 1px solid var(--mc-input-border-color);
+    border-radius: var(--mc-radius);
+
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+.id-lookup-input::placeholder {
+    color: var(--mc-input-placeholder-text-color);
+
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+    font-family: SF Pro Text;
+}
+
+.id-lookup-input:focus {
+    outline: var(--mc-input-outline-color);
+}
+
+.clicktopay-opc .id-lookup-continue-with-click-to-pay-button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.id-lookup-continue-with-click-to-pay-button {
+    background-color: var(--mc-continue-with-click-to-pay-button-background-color);
+    color: var(--mc-continue-with-click-to-pay-button-text-color);
+
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--mc-radius);
+    padding: 0.75rem 2rem;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: SF Pro Text;
+
+    width: 100%;
+}
+
+.id-lookup-continue-with-click-to-pay-button:hover {
+    background-color: var(--mc-continue-with-click-to-pay-button-hover-background-color);
+    color: var(--mc-continue-with-click-to-pay-button-hover-text-color);
+}
+
+.id-lookup-continue-with-click-to-pay-button:disabled {
+    background-color: var(--mc-continue-with-click-to-pay-button-muted-background-color);
+    color: var(--mc-continue-with-click-to-pay-button-muted-text-color);
+
+    pointer-events: none;
+}
+
+.id-lookup-line {
+    border-bottom: 1px solid var(--mc-line-color);
+
+    text-align: center;
+    line-height: 0.1em;
+    margin: 10px 0 10px;
+}
+
+.id-lookup-line-text {
+    background-color: var(--mc-container-background-color);
+    color: var(--mc-line-text-color);
+
+    font-size: 12px;
+    line-height: 0 !important;
+    font-weight: 400;
+    font-family: Inter;
+
+    width: 100%;
+
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+
+.clicktopay-opc .id-lookup-manual-card-entry-button {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.id-lookup-manual-card-entry-button {
+    background-color: var(--mc-manual-card-entry-button-background-color);
+    color: var(--mc-manual-card-entry-button-text-color);
+
+    border: 1px solid var(--mc-manual-card-entry-button-border-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--mc-radius);
+    padding: 0.75rem 2rem;
+
+    cursor: pointer;
+
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    font-family: SF Pro Text;
+
+    width: 100%;
+}
+
+.id-lookup-manual-card-entry-button:hover {
+    background-color: var(--mc-manual-card-entry-button-hover-background-color);
+    color: var(--mc-manual-card-entry-button-hover-text-color);
+
+    border: 1px solid var(--mc-manual-card-entry-button-hover-border-color);
+}
+
+.id-lookup-manual-card-entry-button:disabled {
+    background-color: var(--mc-manual-card-entry-button-muted-background-color);
+    color: var(--mc-manual-card-entry-button-muted-text-color);
+
+    border: 1px solid var(--mc-manual-card-entry-button-muted-border-color);
+
+    pointer-events: none;
+}
+
+
+.id-lookup-button-img {
+    background-image: url('https://src.mastercard.com/srci/integration/components/src-ui-kit/assets/icons/src.svg');
+    width: 27px;
+    height: 17px;
+}
+
+.id-lookup-title-click-to-pay:hover {
+    color: var(--mc-title-c2p-button-hover-text-color);
+}
+
+.id-lookup-title-click-to-pay {
+    color: var(--mc-title-c2p-button-text-color);
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: SF Pro Text;
+
+    margin-left: 0px;
+    cursor: pointer;
+}

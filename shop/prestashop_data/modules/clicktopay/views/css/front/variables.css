@@ -1,0 +1,430 @@
+/**
+ * NOTICE OF LICENSE
+ *
+ * @author    Mastercard Inc. www.mastercard.com
+ * @copyright Copyright (c) permanent, Mastercard Inc.
+ * @license   Apache-2.0
+ *
+ * @see       /LICENSE
+ *
+ * International Registered Trademark & Property of Mastercard Inc.
+ */
+:root {
+    --mc-radius: 0.5rem;
+
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+}
+
+:root.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+}
+
+#clicktopay-card-input-form {
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+    --mc-container-border-color: rgba(151, 151, 151, .3);
+    --mc-container-shadow-color: rgba(74, 74, 7, .18);
+
+    --mc-line-text-color: rgba(100, 100, 100, 1);
+    --mc-line-color: rgba(221, 221, 221, 1);
+
+    --mc-button-pipe-color: rgba(0, 0, 0, 1);
+
+    --mc-access-your-cards-button-text-color: rgba(0, 0, 0, 1);
+    --mc-access-your-cards-button-background-color: rgba(255, 255, 255, 1);
+    --mc-access-your-cards-button-border-color: rgba(0, 0, 0, 1);
+
+    --mc-access-your-cards-button-muted-text-color: rgba(0, 0, 0, 1);
+    --mc-access-your-cards-button-muted-background-color: rgba(161, 161, 170, 1);
+    --mc-access-your-cards-button-muted-border-color: rgba(161, 161, 170, 1);
+
+    --mc-access-your-cards-button-hover-text-color: rgba(0, 0, 0, 1);
+    --mc-access-your-cards-button-hover-background-color: rgba(228, 228, 228, 0.5);
+    --mc-access-your-cards-button-hover-border-color: rgba(0, 0, 0, 1);
+
+    --mc-access-your-saved-cards-button-text-color: rgba(0, 0, 0, 1);
+    --mc-access-your-saved-cards-button-background-color: rgba(255, 255, 255, 1);
+    --mc-access-your-saved-cards-button-border-color: rgba(0, 0, 0, 1);
+
+    --mc-access-your-saved-cards-button-muted-text-color: rgba(0, 0, 0, 1);
+    --mc-access-your-saved-cards-button-muted-background-color: rgba(161, 161, 170, 1);
+    --mc-access-your-saved-cards-button-muted-border-color: rgba(161, 161, 170, 1);
+
+    --mc-access-your-saved-cards-button-hover-text-color: rgba(0, 0, 0, 1);
+    --mc-access-your-saved-cards-button-hover-background-color: rgba(228, 228, 228, 0.5);
+    --mc-access-your-saved-cards-button-hover-border-color: rgba(0, 0, 0, 1);
+
+    --mc-shipping-container-background: rgba(248, 248, 248, 1);
+    --mc-shipping-container-border: rgba(240, 240, 240, 1);
+
+    --mc-shipping-container-title-color: rgba(44, 44, 45, 1);
+
+    --mc-shipping-container-description-color: rgba(44, 44, 45, 1);
+
+    --mc-shipping-container-edit-button-color: rgba(44, 44, 45, 1);
+    --mc-shipping-container-edit-button-muted-color: rgba(113, 113, 122, 1);
+    --mc-shipping-container-edit-button-hover-color: rgba(255, 107, 64, 1);
+}
+
+#clicktopay-card-loading {
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+    --mc-container-border-color: rgba(151, 151, 151, .3);
+    --mc-container-shadow-color: rgba(74, 74, 7, .18);
+
+    --mc-loading-message-color: rgba(0, 0, 0, 1);
+}
+
+#clicktopay-id-lookup-form {
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+    --mc-container-border-color: rgba(151, 151, 151, .3);
+    --mc-container-shadow-color: rgba(74, 74, 7, .18);
+
+    --mc-title-text-color: rgba(0, 0, 0, 1);
+
+    --mc-description-text-color: rgba(44, 44, 45, 1);
+
+    --mc-input-label-text-color: rgba(100, 100, 100, 1);
+
+    --mc-title-c2p-button-text-color: rgb(255, 58, 0);
+    --mc-title-c2p-button-hover-text-color: rgba(255, 60, 0, 1);
+
+    --mc-input-text-color: rgba(0, 0, 0, 1);
+    --mc-input-placeholder-text-color: rgba(210, 210, 210, 1);
+
+    --mc-input-background-color: rgba(255, 255, 255, 1);
+    --mc-input-border-color: rgba(185, 196, 201, 1);
+    --mc-input-outline-color: rgba(203, 203, 203, 0.5);
+
+    --mc-continue-with-click-to-pay-button-text-color: rgba(255, 255, 255, 1);
+    --mc-continue-with-click-to-pay-button-background-color: rgba(0, 0, 0, 1);
+
+    --mc-continue-with-click-to-pay-button-muted-text-color: rgba(255, 255, 255, 1);
+    --mc-continue-with-click-to-pay-button-muted-background-color: rgba(155, 155, 155, 1);
+
+    --mc-continue-with-click-to-pay-button-hover-text-color: rgba(255, 255, 255, 1);
+    --mc-continue-with-click-to-pay-button-hover-background-color: rgba(0, 0, 0, 0.9);
+
+    --mc-line-text-color: rgba(100, 100, 100, 1);
+    --mc-line-color: rgba(221, 221, 221, 1);
+
+    --mc-manual-card-entry-button-text-color: rgba(0, 0, 0, 1);
+    --mc-manual-card-entry-button-background-color: rgba(255, 255, 255, 1);
+    --mc-manual-card-entry-button-border-color: rgba(0, 0, 0, 1);
+
+    --mc-manual-card-entry-button-muted-text-color: rgba(0, 0, 0, 1);
+    --mc-manual-card-entry-button-muted-background-color: rgba(161, 161, 170, 1);
+    --mc-manual-card-entry-button-muted-border-color: rgba(161, 161, 170, 1);
+
+    --mc-manual-card-entry-button-hover-text-color: rgba(0, 0, 0, 1);
+    --mc-manual-card-entry-button-hover-background-color: rgba(228, 228, 228, 0.5);
+    --mc-manual-card-entry-button-hover-border-color: rgba(0, 0, 0, 1);
+}
+
+#clicktopay-card-list {
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+    --mc-container-border-color: rgba(151, 151, 151, .3);
+    --mc-container-shadow-color: rgba(74, 74, 7, .18);
+
+    --mc-container-border-radius: 5px;
+
+    --mc-consumer-channel-text-color: rgba(0, 0, 0, 1);
+
+    --mc-not-you-button-text-color: rgba(0, 0, 0, 1);
+    --mc-not-you-button-muted-text-color: rgba(113, 113, 122, 1);
+    --mc-not-you-button-hover-text-color: rgba(255, 107, 64, 1);
+
+    --mc-title-text-color: rgba(0, 0, 0, 1);
+
+    --mc-title-c2p-button-text-color: rgba(255, 58, 0, 1);
+    --mc-title-c2p-button-hover-text-color: rgba(255, 92, 44, 1);
+
+    --mc-description-text-color: rgba(44, 44, 45, 1);
+
+    --mc-dropdown-button-open-text-color: rgba(0, 0, 0, 1);
+    --mc-dropdown-button-open-background-color: rgba(248, 248, 248, 1);
+    --mc-dropdown-button-open-border-color: rgba(185, 196, 201, 1);
+
+    --mc-dropdown-button-closed-text-color: rgba(0, 0, 0, 1);
+    --mc-dropdown-button-closed-background-color: rgba(255, 255, 255, 1);
+    --mc-dropdown-button-closed-border-color: rgba(185, 196, 201, 1);
+
+    --mc-dropdown-content-background-color: rgba(248, 248, 248, 1);
+
+    --mc-dropdown-content-card-option-text-color: rgba(0, 0, 0, 1);
+
+    --mc-dropdown-content-card-option-selected-background-color: rgba(255, 255, 255, 1);
+    --mc-dropdown-content-card-option-hovered-background-color: rgba(243, 240, 238, 1);
+
+    --mc-line-text-color: rgba(100, 100, 100, 1);
+    --mc-line-color: rgba(221, 221, 221, 1);
+
+    --mc-manual-card-entry-button-text-color: rgba(0, 0, 0, 1);
+    --mc-manual-card-entry-button-background-color: rgba(255, 255, 255, 1);
+    --mc-manual-card-entry-button-border-color: rgba(0, 0, 0, 1);
+
+    --mc-manual-card-entry-button-muted-text-color: rgba(0, 0, 0, 1);
+    --mc-manual-card-entry-button-muted-background-color: rgba(161, 161, 170, 1);
+    --mc-manual-card-entry-button-muted-border-color: rgba(161, 161, 170, 1);
+
+    --mc-manual-card-entry-button-hover-text-color: rgba(0, 0, 0, 1);
+    --mc-manual-card-entry-button-hover-background-color: rgba(228, 228, 228, 0.5);
+    --mc-manual-card-entry-button-hover-border-color: rgba(0, 0, 0, 1);
+
+    --mc-shipping-container-background: rgba(248, 248, 248, 1);
+    --mc-shipping-container-border: rgba(240, 240, 240, 1);
+
+    --mc-shipping-container-title-color: rgba(44, 44, 45, 1);
+
+    --mc-shipping-container-description-color: rgba(44, 44, 45, 1);
+
+    --mc-shipping-container-edit-button-color: rgba(44, 44, 45, 1);
+    --mc-shipping-container-edit-button-muted-color: rgba(113, 113, 122, 1);
+    --mc-shipping-container-edit-button-hover-color: rgba(255, 107, 64, 1);
+}
+
+#clicktopay-card-input-form.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+    --mc-container-border-color: rgba(34, 34, 34, 1);
+    --mc-container-shadow-color: rgba(255, 255, 255, 0.2);
+
+    --mc-line-text-color: rgba(230, 230, 230, 1);;
+    --mc-line-color: rgba(109, 109, 109, 1);
+
+    --mc-button-pipe-color: rgba(255, 255, 255, 1);
+
+    --mc-access-your-cards-button-text-color: rgba(255, 255, 255, 1);
+    --mc-access-your-cards-button-background-color: rgba(34, 34, 34, 1);
+    --mc-access-your-cards-button-border-color: rgba(255, 255, 255, 1);
+
+    --mc-access-your-cards-button-muted-text-color: rgba(255, 255, 255, 1);
+    --mc-access-your-cards-button-muted-background-color: rgba(34, 34, 34, 1);
+    --mc-access-your-cards-button-muted-border-color: rgba(255, 255, 255, 1);
+
+    --mc-access-your-cards-button-hover-text-color: rgba(255, 255, 255, 1);
+    --mc-access-your-cards-button-hover-background-color: rgba(34, 34, 34, 1);
+    --mc-access-your-cards-button-hover-border-color: rgba(255, 255, 255, 1);
+
+    --mc-access-your-saved-cards-button-text-color: rgba(255, 255, 255, 1);
+    --mc-access-your-saved-cards-button-background-color: rgba(34, 34, 34, 1);
+    --mc-access-your-saved-cards-button-border-color: rgba(255, 255, 255, 1);
+
+    --mc-access-your-saved-cards-button-muted-text-color: rgba(255, 255, 255, 1);
+    --mc-access-your-saved-cards-button-muted-background-color: rgba(34, 34, 34, 1);
+    --mc-access-your-saved-cards-button-muted-border-color: rgba(255, 255, 255, 1);
+
+    --mc-access-your-saved-cards-button-hover-text-color: rgba(255, 255, 255, 1);
+    --mc-access-your-saved-cards-button-hover-background-color: rgba(34, 34, 34, 1);
+    --mc-access-your-saved-cards-button-hover-border-color: rgba(255, 255, 255, 1);
+
+    --mc-shipping-container-background: rgba(73, 73, 73, 1);
+    --mc-shipping-container-border: rgba(100, 100, 100, 1);
+
+    --mc-shipping-container-title-color: rgba(255, 255, 255, 1);
+
+    --mc-shipping-container-description-color: rgba(255, 255, 255, 1);
+
+    --mc-shipping-container-edit-button-color: rgba(255, 255, 255, 1);
+    --mc-shipping-container-edit-button-muted-color: rgba(113, 113, 122, 1);
+    --mc-shipping-container-edit-button-hover-color: rgba(255, 107, 64, 1);
+}
+
+#clicktopay-card-loading.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+    --mc-container-border-color: rgba(34, 34, 34, 1);
+    --mc-container-shadow-color: rgba(255, 255, 255, 0.2);
+
+    --mc-loading-message-color: rgba(255, 255, 255, 1);
+}
+
+#clicktopay-id-lookup-form.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+    --mc-container-border-color: rgba(34, 34, 34, 1);
+    --mc-container-shadow-color: rgba(255, 255, 255, 0.2);
+
+    --mc-title-text-color: rgba(255, 255, 255, 1);
+
+    --mc-description-text-color: rgba(255, 255, 255, 1);
+
+    --mc-input-label-text-color: rgba(230, 230, 230, 1);
+
+    --mc-input-text-color: rgba(255, 255, 255, 1);
+    --mc-input-placeholder-text-color: rgba(87, 87, 87, 1);
+
+    --mc-title-c2p-button-text-color: rgba(255, 58, 0, 1);
+    --mc-title-c2p-button-hover-text-color: rgb(255, 60, 0);
+
+    --mc-input-background-color: rgba(34, 34, 34, 1);
+    --mc-input-border-color: rgba(230, 230, 230, 1);
+    --mc-input-outline-color: rgb(178, 178, 178);
+
+    --mc-continue-with-click-to-pay-button-text-color: rgba(0, 0, 0, 1);
+    --mc-continue-with-click-to-pay-button-background-color: rgba(255, 255, 255, 1);
+
+    --mc-continue-with-click-to-pay-button-muted-text-color: rgba(255, 255, 255, 1);
+    --mc-continue-with-click-to-pay-button-muted-background-color: rgba(155, 155, 155, 1);
+
+    --mc-continue-with-click-to-pay-button-hover-text-color: rgba(0, 0, 0, 1);
+    --mc-continue-with-click-to-pay-button-hover-background-color: rgb(210, 209, 209);
+
+    --mc-line-text-color: rgba(230, 230, 230, 1);
+    --mc-line-color: rgba(109, 109, 109, 1);
+
+    --mc-manual-card-entry-button-text-color: rgba(255, 255, 255, 1);
+    --mc-manual-card-entry-button-background-color: rgba(34, 34, 34, 1);
+    --mc-manual-card-entry-button-border-color: rgba(255, 255, 255, 1);
+
+    --mc-manual-card-entry-button-muted-text-color: rgba(255, 255, 255, 1);
+    --mc-manual-card-entry-button-muted-background-color: rgba(34, 34, 34, 1);
+    --mc-manual-card-entry-button-muted-border-color: rgba(255, 255, 255, 1);
+
+    --mc-manual-card-entry-button-hover-text-color: rgba(255, 255, 255, 1);
+    --mc-manual-card-entry-button-hover-background-color: rgba(34, 34, 34, 1);
+    --mc-manual-card-entry-button-hover-border-color: rgba(255, 255, 255, 1);
+}
+
+#clicktopay-card-list.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+    --mc-container-border-color: rgba(34, 34, 34, 1);
+    --mc-container-shadow-color: rgba(255, 255, 255, 0.2);
+
+    --mc-container-border-radius: 5px;
+
+    --mc-consumer-channel-text-color: rgba(255, 255, 255, 1);
+
+    --mc-not-you-button-text-color: rgba(255, 255, 255, 1);
+    --mc-not-you-button-muted-text-color: rgba(113, 113, 122, 1);
+    --mc-not-you-button-hover-text-color: rgba(255, 107, 64, 1);
+
+    --mc-title-text-color: rgba(255, 255, 255, 1);
+
+    --mc-title-c2p-button-text-color: rgba(255, 58, 0, 1);
+    --mc-title-c2p-button-hover-text-color: rgba(255, 92, 44, 1);
+
+    --mc-description-text-color: rgba(255, 255, 255, 1);
+
+    --mc-dropdown-button-open-text-color: rgba(230, 230, 230, 1);
+    --mc-dropdown-button-open-background-color: rgba(71, 71, 71, 1);
+    --mc-dropdown-button-open-border-color: rgba(71, 71, 71, 1);
+
+    --mc-dropdown-button-closed-text-color: rgba(255, 255, 255, 1);
+    --mc-dropdown-button-closed-background-color: rgba(34, 34, 34, 1);
+    --mc-dropdown-button-closed-border-color: rgba(230, 230, 230, 1);
+
+    --mc-dropdown-content-background-color: rgba(71, 71, 71, 1);
+
+    --mc-dropdown-content-card-option-text-color: rgba(255, 255, 255, 1);
+
+    --mc-dropdown-content-card-option-selected-background-color: rgba(85, 82, 80, 1);
+    --mc-dropdown-content-card-option-hovered-background-color: rgba(51, 51, 51, 1);
+
+    --mc-line-text-color: rgba(230, 230, 230, 1);
+    --mc-line-color: rgba(109, 109, 109, 1);
+
+    --mc-manual-card-entry-button-text-color: rgba(255, 255, 255, 1);
+    --mc-manual-card-entry-button-background-color: rgba(34, 34, 34, 1);
+    --mc-manual-card-entry-button-border-color: rgba(255, 255, 255, 1);
+
+    --mc-manual-card-entry-button-muted-text-color: rgba(255, 255, 255, 1);
+    --mc-manual-card-entry-button-muted-background-color: rgba(34, 34, 34, 1);
+    --mc-manual-card-entry-button-muted-border-color: rgba(255, 255, 255, 1);
+
+    --mc-manual-card-entry-button-hover-text-color: rgba(255, 255, 255, 1);
+    --mc-manual-card-entry-button-hover-background-color: rgba(34, 34, 34, 1);
+    --mc-manual-card-entry-button-hover-border-color: rgba(255, 255, 255, 1);
+
+    --mc-shipping-container-background: rgba(73, 73, 73, 1);
+    --mc-shipping-container-border: rgba(100, 100, 100, 1);
+
+    --mc-shipping-container-title-color: rgba(255, 255, 255, 1);
+
+    --mc-shipping-container-description-color: rgba(255, 255, 255, 1);
+
+    --mc-shipping-container-edit-button-color: rgba(255, 255, 255, 1);
+    --mc-shipping-container-edit-button-muted-color: rgba(113, 113, 122, 1);
+    --mc-shipping-container-edit-button-hover-color: rgba(255, 107, 64, 1);
+}
+
+.mc_payment_form_footer {
+    --mc-footer-background-color: rgba(255, 255, 255, 1);
+    --mc-footer-border-color: rgba(151, 151, 151, .3);
+    --mc-footer-shadow-color: rgba(74, 74, 7, .18);
+
+    --mc-footer-text-color: rgba(74, 74, 74, 1);
+    --mc-footer-text-color-hover: #4a4a4a;;
+}
+
+.mc_payment_form_footer.dark {
+    --mc-footer-background-color: rgba(34, 34, 34, 1);
+    --mc-footer-border-color: rgba(34, 34, 34, 1);
+    --mc-footer-shadow-color: rgba(255, 255, 255, 0.2);
+
+    --mc-footer-text-color: rgba(255, 255, 255, 1);
+    --mc-footer-text-color-hover: #4a4a4a;;
+}
+
+#clicktopay-express-checkout-button {
+    --mc-checkout-faster-button-text-color: rgba(255, 255, 255, 1);
+    --mc-checkout-faster-button-background-color: rgba(0, 0, 0, 1);
+    --mc-checkout-faster-button-border-color: rgba(0, 0, 0, 1);
+
+    --mc-checkout-faster-button-hover-text-color: rgba(255, 255, 255, 1);
+    --mc-checkout-faster-button-hover-background-color: rgba(0, 0, 0, 0.9);
+    --mc-checkout-faster-button-hover-border-color: rgba(0, 0, 0, 0.9);
+
+    --mc-checkout-faster-button-additional-text-color: rgba(100, 100, 100, 1);
+}
+
+#clicktopay-express-checkout-button.dark {
+    --mc-checkout-faster-button-text-color: rgba(0, 0, 0, 1);
+    --mc-checkout-faster-button-background-color: rgba(255, 255, 255, 1);
+    --mc-checkout-faster-button-border-color: rgba(0, 0, 0, 1);
+
+    --mc-checkout-faster-button-hover-text-color: rgba(0, 0, 0, 1);
+    --mc-checkout-faster-button-hover-background-color: rgba(255, 255, 255, 0.7);
+    --mc-checkout-faster-button-hover-border-color: rgba(255, 255, 255, 0.7);
+
+    --mc-checkout-faster-button-additional-text-color: rgba(230, 230, 230, 1);
+}
+
+#otp-form {
+    --mc-container-shadow-color: rgba(74, 74, 7, .18);
+}
+
+#mc-ctp-card-form-src-learn-more-background {
+    z-index: 1003 !important;
+}
+
+.otp-form-container {
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+    --mc-container-border-color: rgba(151, 151, 151, .3);
+    --mc-container-shadow-color: rgba(74, 74, 7, .18);
+}
+
+.otp-form-container.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+    --mc-container-border-color: rgba(34, 34, 34, 1);
+    --mc-container-shadow-color: rgba(255, 255, 255, 0.2);
+}
+
+.src-mark-container {
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+}
+
+.src-mark-container.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+}
+
+.dcf-screen {
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+}
+
+.dcf-screen.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+}
+
+.clicktopay-form {
+    --mc-container-background-color: rgba(255, 255, 255, 1);
+}
+
+.clicktopay-form.dark {
+    --mc-container-background-color: rgba(34, 34, 34, 1);
+}

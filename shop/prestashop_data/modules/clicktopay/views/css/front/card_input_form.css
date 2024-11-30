@@ -1,0 +1,167 @@
+/**
+ * NOTICE OF LICENSE
+ *
+ * @author    Mastercard Inc. www.mastercard.com
+ * @copyright Copyright (c) permanent, Mastercard Inc.
+ * @license   Apache-2.0
+ *
+ * @see       /LICENSE
+ *
+ * International Registered Trademark & Property of Mastercard Inc.
+ */
+.card-input-container {
+    background-color: var(--mc-container-background-color);
+    border: 1px solid var(--mc-container-border-color);
+    box-shadow: 0 2px 10px var(--mc-container-shadow-color);
+}
+
+.card-input-main {
+    padding: 1rem 1.5rem 1.5rem;
+}
+
+.dcf-screen .card-input-main.card-entered {
+    padding-bottom: 0;
+}
+
+.card-input-button-img {
+    width: 27px;
+    height: 17px;
+    margin: 0;
+}
+
+.card-input-line {
+    border-bottom: 1px solid var(--mc-line-color);
+
+    text-align: center;
+    line-height: 0.1em;
+    margin: 10px 0 10px;
+}
+
+.card-input-line-text {
+    background-color: var(--mc-container-background-color);
+    color: var(--mc-line-text-color);
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 0 !important;
+    font-family: Inter;
+
+    width: 100%;
+
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+
+.card-input-button-pipe {
+    background-color: var(--mc-button-pipe-color);
+
+    width: 1px;
+
+    height: 17px;
+    float: left;
+    margin-left: 5px;
+    margin-right: 8px;
+    align-items: center;
+}
+
+.clicktopay-opc .card-input-access-your-cards-button {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+.card-input-access-your-cards-button {
+    background-color: var(--mc-access-your-cards-button-background-color);
+    color: var(--mc-access-your-cards-button-text-color);
+
+    border: 1px solid var(--mc-access-your-cards-button-border-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--mc-radius);
+    padding: 0.75rem 2rem;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: SF Pro Text;
+
+    width: 100%;
+}
+
+.card-input-access-your-cards-button:hover {
+    background-color: var(--mc-access-your-cards-button-hover-background-color);
+    color: var(--mc-access-your-cards-button-hover-text-color);
+
+    border: 1px solid var(--mc-access-your-cards-button-hover-border-color);
+}
+
+.card-input-access-your-cards-button:disabled {
+    background-color: var(--mc-access-your-cards-button-muted-background-color);
+    color: var(--mc-access-your-cards-button-muted-text-color);
+
+    border: 1px solid var(--mc-access-your-cards-button-muted-border-color);
+
+    pointer-events: none;
+}
+
+.card-input-access-your-saved-cards-button {
+    background-color: var(--mc-access-your-saved-cards-button-background-color);
+    color: var(--mc-access-your-saved-cards-button-text-color);
+
+    border: 1px solid var(--mc-access-your-saved-cards-button-border-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: var(--mc-radius);
+    padding: 0.75rem 2rem;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: SF Pro Text;
+
+    width: 100%;
+}
+
+.card-input-access-your-saved-cards-button:hover {
+    background-color: var(--mc-access-your-saved-cards-button-hover-background-color);
+    color: var(--mc-access-your-saved-cards-button-hover-text-color);
+}
+
+.card-input-access-your-saved-cards-button:disabled {
+    background-color: var(--mc-access-your-saved-cards-button-muted-background-color);
+    color: var(--mc-access-your-saved-cards-button-muted-text-color);
+
+    border: 1px solid var(--mc-access-your-saved-cards-button-muted-border-color);
+
+    pointer-events: none;
+}
+
+@media (max-width: 465px) {
+    .card-input-access-your-saved-cards-button {
+        font-size: 14px;
+        padding: 0.75rem 0.5rem;
+    }
+}
+
+@media (max-width: 515px) {
+    .card-input-access-your-cards-button {
+        padding-left: 5px;
+        padding-right: 5px;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 420px) {
+    .card-input-access-your-cards-button {
+        font-size: 13px;
+    }
+}

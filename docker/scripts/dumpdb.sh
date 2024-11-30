@@ -8,7 +8,7 @@ DB_USER="root"
 DB_PASS="admin"
 
 # Lokalny katalog, do którego zapiszesz plik eksportu
-LOCAL_BACKUP_DIR="../db_init"
+LOCAL_BACKUP_DIR="../backup"
 
 # Sprawdź, czy katalog istnieje, jeśli nie, utwórz go
 mkdir -p $LOCAL_BACKUP_DIR

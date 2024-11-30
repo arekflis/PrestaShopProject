@@ -1,0 +1,167 @@
+/* Black Italic (900) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-BlackIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 900;
+}
+
+/* Extra Light (200) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-ExtraLt.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 200;
+}
+
+/* Light (300) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Lt.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Black (900) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Black.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+}
+
+/* Hairline Italic (100) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-HairlineIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* Medium Italic (500) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-MedIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* Bold Italic (700) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-BoldIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Hairline (100) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Hairline.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Medium (500) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Med.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Bold (700) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Heavy Italic (800) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-HeavyIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 800;
+}
+
+/* Thin Italic (100) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-ThinIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 100;
+}
+
+/* Book Italic (300) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-BookIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Heavy (800) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Heavy.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* Thin (100) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Thin.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+/* Book (300) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Book.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Italic (400) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-It.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Regular (400) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Extra Light Italic (200) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-ExtraLtIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 200;
+}
+
+/* Light Italic (300) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-LtIt.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Ultra (900) */
+@font-face {
+    font-family: 'Mark Offc For MC';
+    src: url('../../fonts/MarkForMC-Ultra.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+}

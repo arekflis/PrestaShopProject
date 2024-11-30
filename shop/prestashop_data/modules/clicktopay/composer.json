@@ -1,0 +1,57 @@
+{
+    "name": "invertus/clicktopay",
+    "type": "prestashop-module",
+    "authors": [
+        {
+            "name": "Invertus",
+            "email": "help@invertus.eu"
+        }
+    ],
+    "require": {
+        "php": "7.1.0",
+        "ext-json": "*",
+        "apimatic/jsonmapper": "^3.0",
+        "apimatic/unirest-php": "^3.0",
+        "dusank/knapsack": "^10.0",
+        "league/container": "3.4.1",
+        "prestashop/decimal": "^1.4",
+        "psr/simple-cache": "^1.0",
+        "rakit/validation": "^1.4",
+        "symfony/cache": "^3.4",
+        "prestashop/prestashop-accounts-installer": "^1.0.1",
+        "prestashop/module-lib-service-container": "v2.0",
+        "prestashop/module-lib-mbo-installer": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ClickToPay\\Module\\": "src/"
+        },
+        "classmap": [
+            "src/",
+          "clicktopay.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ClickToPay\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.1.0"
+        },
+        "sort-packages": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true,
+        "prepend-autoloader": false
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.19",
+        "invertus/prestashop-models": "^1.0",
+        "phpunit/phpunit": "^7.5",
+        "prestashop/autoindex": "^v1.0.0",
+        "prestashop/header-stamp": "^v1.7"
+    },
+    "author": "Mastercard Inc.",
+    "license": "Apache-2.0"
+}

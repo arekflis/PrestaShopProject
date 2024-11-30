@@ -7,6 +7,7 @@ shop/prestashop_data/img/tmp
 # Install folder
 shop/prestashop_data/install
 
+# Development temporary backup catalog
 docker/db_backups/
 
 # Cache
@@ -16,3 +17,7 @@ shop/prestashop_data/var/cache/
 # Logs
 shop/prestashop_data/var/logs/*
 !shop/prestashop_data/var/logs/.gitkeep
+
+# Images
+shop/prestashop_data/img/p
+!shop/prestashop_data/img/p/.gitkeep
