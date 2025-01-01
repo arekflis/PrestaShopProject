@@ -19,5 +19,5 @@ shop/prestashop_data/var/logs/*
 !shop/prestashop_data/var/logs/.gitkeep
 
 # Images
-shop/prestashop_data/img/p
+shop/prestashop_data/img/p/
 !shop/prestashop_data/img/p/.gitkeep
