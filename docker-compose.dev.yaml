@@ -1,40 +1,31 @@
 services:
-  mysql:
-    container_name: some-mysql-dev
-    image: mysql:5.7
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: admin
-      MYSQL_DATABASE: prestashop
-    networks:
-      - prestashop_network
-    volumes:
-      - ./docker/db_init:/docker-entrypoint-initdb.d/
-
   prestashop:
-    image: prestashop-test-klaster
+    image: prestashop-test-klaster #will be changed to ghcr.io image
     container_name: prestashop-klaster
     restart: unless-stopped
-    depends_on:
-      - mysql
     ports:
-      - 8080:80   # HTTP
-      - 8443:443  # HTTPS 
+      - "8443:443"   
+      - "8080:80"
     environment:
-      DB_SERVER: some-mysql-dev
-      DB_NAME: prestashop
+      DB_SERVER: admin-mysql_db
+      DB_NAME: BE_19348
       DB_USER: root
-      DB_PASSWD: admin
+      DB_PASSWD: student
+      DB_PORT: 3306
       PS_INSTALL_AUTO: 0
       PS_DEV_MODE: 1 
-    networks:
-      - prestashop_network
-    volumes:
-      # - ./shop/prestashop_data:/var/www/html
-      - prestashop-data:/var/www/html
-
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 1G
+        reservations:
+          cpus: "0.5"
+          memory: 512M
+    networks:       # will be removed or changed in the final version
+      - branch_main_0101_default
+      - external_database_test_default
 networks:
-  prestashop_network:
-
-volumes:
-  prestashop-data:
+  branch_main_0101_default:
+  external_database_test_default:
+    external: true

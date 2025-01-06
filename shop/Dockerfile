@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip \
     wget \
+    default-mysql-client \
     && docker-php-ext-install -j$(nproc) \
     gd \
     mysqli \
@@ -42,8 +43,15 @@ COPY ./ssl/000-default.conf /etc/apache2/sites-available/000-default.conf
 # Włącz moduły SSL i Rewrite oraz nową konfigurację Apache
 RUN a2ensite 000-default.conf
 
+COPY ./scripts/dump2.sql /var/www/html/dump2.sql
+
+COPY ./scripts/entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
 # Otwórz porty 80 i 443
 EXPOSE 80 443
+
+ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
 
 # Uruchom Apache w trybie pierwszoplanowym
 CMD ["apache2-foreground"]
