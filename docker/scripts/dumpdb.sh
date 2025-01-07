@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MYSQL_CONTAINER="some-mysql"  
+MYSQL_CONTAINER="some-mysql-dev"  
 
 DB_NAME="prestashop"
 

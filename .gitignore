@@ -22,5 +22,5 @@ shop/prestashop_data/var/logs/*
 #shop/prestashop_data/img/p/
 #!shop/prestashop_data/img/p/.gitkeep
 
-# Docker compose for development
-docker-compose.dev.yaml
+# backup of the important config files
+backup_files

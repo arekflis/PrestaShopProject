@@ -13,7 +13,7 @@ until mysql -h"$DB_HOST" -P"$DB_PORT" -u"$DB_USER" -p"$DB_PASSWORD" -e "SHOW DAT
 done
 
 echo "Importing database $DB_NAME"
-mysql -h"$DB_HOST" -P"$DB_PORT" -u"$DB_USER" -p"$DB_PASSWORD" $DB_NAME < /var/www/html/dump2.sql
+mysql -h"$DB_HOST" -P"$DB_PORT" -u"$DB_USER" -p"$DB_PASSWORD" $DB_NAME < /var/www/html/dump.sql
 echo "Database imported successfully."
 
 

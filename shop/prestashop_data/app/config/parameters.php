@@ -1,11 +1,11 @@
 <?php return array (
   'parameters' => 
   array (
-    'database_host' => getenv('DB_SERVER') ?: 'some-mysql',
-    'database_port' => '',
-    'database_name' => getenv('DB_NAME') ?: 'prestashop',
+    'database_host' => getenv('DB_SERVER') ?: 'admin-mysql_db',
+    'database_port' => getenv('DB_PORT') ?: '3306',
+    'database_name' => getenv('DB_NAME') ?: 'BE_19348',
     'database_user' => getenv('DB_USER') ?: 'root',
-    'database_password' => getenv('DB_PASSWD') ?: 'admin',
+    'database_password' => getenv('DB_PASSWD') ?: 'student',
     'database_prefix' => 'ps_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',
