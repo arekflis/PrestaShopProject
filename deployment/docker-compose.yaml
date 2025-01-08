@@ -44,3 +44,4 @@ services:
     
 networks:
   be_193480_network:
+    driver: overlay

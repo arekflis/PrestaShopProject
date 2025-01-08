@@ -2,7 +2,7 @@
   'parameters' => 
   array (
     'database_host' => getenv('DB_SERVER') ?: 'admin-mysql_db',
-    'database_port' => getenv('DB_PORT') ?: '3306',
+    'database_port' => '',
     'database_name' => getenv('DB_NAME') ?: 'BE_19348',
     'database_user' => getenv('DB_USER') ?: 'root',
     'database_password' => getenv('DB_PASSWD') ?: 'student',
