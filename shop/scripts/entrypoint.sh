@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Database parameters
 DB_HOST=${DB_SERVER:-admin-mysql_db}
 DB_USER=${DB_USER:-root}
 DB_PASSWORD=${DB_PASSWORD:-student}
