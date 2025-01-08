@@ -1,6 +1,6 @@
 services:
   prestashop:
-    image: prestashop-test-klaster #will be changed to ghcr.io image
+    image: ghcr.io/arekflis/prestashopproject
     container_name: prestashop-klaster #will be changed
     restart: unless-stopped
     ports:

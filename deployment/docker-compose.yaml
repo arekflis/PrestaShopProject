@@ -1,7 +1,7 @@
 services:
   prestashop:
-    image: prestashop-test-klaster #will be changed to ghcr.io image
-    container_name: prestashop-klaster #will be changed
+    image: ghcr.io/arekflis/prestashopproject
+    container_name: prestashop-be-193480
     restart: unless-stopped
     ports:
       - "19348:443"
@@ -13,7 +13,7 @@ services:
       #DB_PORT: 3306
       PS_INSTALL_AUTO: 0
       PS_DEV_MODE: 1 
-    networks:       # will be removed or changed in the final version
+    networks:       
       - be_193480_network
     deploy:
       resources:
