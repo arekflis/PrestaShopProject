@@ -1,8 +1,30 @@
 services:
-  prestashop:
-    image: ghcr.io/arekflis/prestashopproject
-    container_name: prestashop-klaster #will be changed
+  mysql_193480:
+    container_name: mysql_193480
+    image: mysql:5.7
     restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: student
+      MYSQL_DATABASE: BE_19348
+    networks:
+      - be_193480_network
+    volumes:
+      - ./shop/scripts:/docker-entrypoint-initdb.d/
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 256M
+        reservations:
+          cpus: "0.25"
+          memory: 256M
+
+  prestashop:
+    image: prestashop-test-klaster
+    container_name: prestashop-klaster 
+    restart: unless-stopped
+    depends_on:
+      - mysql_193480
     ports:
       - "19348:443"
     environment:
@@ -13,8 +35,10 @@ services:
       #DB_PORT: 3306
       PS_INSTALL_AUTO: 0
       PS_DEV_MODE: 1 
-    networks:       # will be removed or changed in the final version
+    networks:       
       - be_193480_network
+    volumes:
+      - ./shop/prestashop_data:/var/www/html
     deploy:
       resources:
         limits:
@@ -24,23 +48,5 @@ services:
           cpus: "0.5"
           memory: 512M
 
-  mysql:
-    container_name: mysql_193480
-    image: mysql:5.7
-    restart: unless-stopped
-    environment:
-      MYSQL_ROOT_PASSWORD: student
-      MYSQL_DATABASE: BE_19348
-    networks:
-      - be_193480_network
-    deploy:
-      resources:
-        limits:
-          cpus: "2"
-          memory: 256M
-        reservations:
-          cpus: "0.25"
-          memory: 256M
-    
 networks:
   be_193480_network:
