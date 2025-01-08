@@ -1,0 +1,3 @@
+# Ignore cache files
+prestashop_data/var/cache/dev/*
+prestashop_data/var/cache/prod/*

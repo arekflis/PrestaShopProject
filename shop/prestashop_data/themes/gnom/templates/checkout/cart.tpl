@@ -295,7 +295,7 @@
             <div class="n54531_outline" id="return_message">
                 <div class="n54531_outline_sub menu_messages_message" id="return_sub_basket_empty">
                     <div class="basket_icon_wrapper">
-                        <img src="https://localhost:8443/img/cms/gnom-cart-empty-icon.png">
+                        <img src="https://localhost:19348/img/cms/gnom-cart-empty-icon.png">
                     </div>
                     <h3 class="return_label">Twój koszyk jest pusty.</h3>
                     <p>Dodaj do niego produkty, aby móc rozpocząć składanie zamówienia.</p>

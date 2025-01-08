@@ -45,27 +45,27 @@
                 <tr>
                     <td>
                     <span class="material-symbols-outlined">line_start</span>
-                      <a href="https://localhost:8443/index.php?controller=history">Status zamówienia</a>
+                      <a href="https://localhost:19348/index.php?controller=history">Status zamówienia</a>
                     </td>
                     <td class="td-right">
                     <i class="material-icons local_shipping">local_shipping</i>
-                    <a href="https://localhost:8443/index.php?id_cms=1&controller=cms">Śledzenie przesyłki</a>
+                    <a href="https://localhost:19348/index.php?id_cms=1&controller=cms">Śledzenie przesyłki</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
                     <i class="material-icons sentiment_dissatisfied">sentiment_dissatisfied</i>
-                    <a href="https://localhost:8443/index.php?controller=order-slip">Chcę zareklamować produkt</a>
+                    <a href="https://localhost:19348/index.php?controller=order-slip">Chcę zareklamować produkt</a>
                     </td>
                     <td class="td-right">
                     <span class="material-symbols-outlined">currency_exchange</span>
-                    <a href="https://localhost:8443/index.php?controller=order-slip">Chcę zwrócić produkt</a>
+                    <a href="https://localhost:19348/index.php?controller=order-slip">Chcę zwrócić produkt</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
                     <span class="material-symbols-outlined">quick_reorder</span>
-                    <a href="https://localhost:8443/index.php?controller=order-slip">Chcę wymienić produkt</a>
+                    <a href="https://localhost:19348/index.php?controller=order-slip">Chcę wymienić produkt</a>
                     </td>
                     <td class="td-right">
                     <i class="material-icons call">call</i>
@@ -81,11 +81,11 @@
                 <tr>
                     <td>
                     <span class="material-symbols-outlined">edit_square</span>
-                    <a href="https://localhost:8443/index.php?controller=authentication&create_account">Zarejestruj się</a>
+                    <a href="https://localhost:19348/index.php?controller=authentication&create_account">Zarejestruj się</a>
                     </td>
                     <td class="td-right">
                     <span class="material-symbols-outlined">shopping_cart</span>
-                    <a href="https://localhost:8443/index.php?controller=cart&action=show">Koszyk</a>
+                    <a href="https://localhost:19348/index.php?controller=cart&action=show">Koszyk</a>
                     </td>
                 </tr>
                 <tr>
@@ -95,13 +95,13 @@
                     </td>
                     <td class="td-right">
                     <span class="material-symbols-outlined">list_alt</span>
-                    <a href="https://localhost:8443/index.php?controller=history">Lista zakupionych produktów</a>
+                    <a href="https://localhost:19348/index.php?controller=history">Lista zakupionych produktów</a>
                     </td>
                 </tr>
                 <tr>
                     <td>
                     <span class="material-symbols-outlined">schedule</span>
-                    <a href="https://localhost:8443/index.php?controller=history">Historia transakcji</a>
+                    <a href="https://localhost:19348/index.php?controller=history">Historia transakcji</a>
                     </td>
                     <td class="td-right">
                     <span class="material-symbols-outlined">content_cut</span>
@@ -124,26 +124,26 @@
       <h3>Regulaminy</h3>
         <tr>
         <td>
-          <a href="https://localhost:8443/index.php?id_cms=4&controller=cms">Informacje o sklepie</a>
+          <a href="https://localhost:19348/index.php?id_cms=4&controller=cms">Informacje o sklepie</a>
         </td>
         <td class="td-right-regulaminy">
-          <a href="https://localhost:8443/index.php?id_cms=1&controller=cms">Wysyłka</a>
+          <a href="https://localhost:19348/index.php?id_cms=1&controller=cms">Wysyłka</a>
         </td>
         </tr>
         <tr>
         <td>
-          <a href="https://localhost:8443/index.php?id_cms=5&controller=cms">Sposoby płatności i prowizje</a>
+          <a href="https://localhost:19348/index.php?id_cms=5&controller=cms">Sposoby płatności i prowizje</a>
         </td>
         <td class="td-right-regulaminy">
-          <a href="https://localhost:8443/index.php?id_cms=3&controller=cms">Regulamin</a>
+          <a href="https://localhost:19348/index.php?id_cms=3&controller=cms">Regulamin</a>
         </td>
         </tr>
         <tr>
         <td>
-          <a href="https://localhost:8443/index.php?id_cms=2&controller=cms">Polityka prywatności</a>
+          <a href="https://localhost:19348/index.php?id_cms=2&controller=cms">Polityka prywatności</a>
         </td>
         <td class="td-right-regulaminy">
-          <a href="https://localhost:8443/index.php?id_cms=7&controller=cms">Odstąpienie od umowy</a>
+          <a href="https://localhost:19348/index.php?id_cms=7&controller=cms">Odstąpienie od umowy</a>
         </td>
         </tr>
         <tr>
@@ -158,7 +158,7 @@
     <div id='idosell-div'>
       <p>W sklepie prezentujemy ceny brutto (z VAT)</p>
       <span id="footer-line"></span>
-      <img src="https://localhost:8443/img/cms/poweredby_IdoSell_Shop_black.png">
+      <img src="https://localhost:19348/img/cms/poweredby_IdoSell_Shop_black.png">
     </div>
     <div id="footer-contact-info">
       <a href="tel:+48660527787">+48 660 527 787</a>
