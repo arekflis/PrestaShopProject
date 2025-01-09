@@ -1,11 +1,11 @@
 <?php return array (
   'parameters' => 
   array (
-    'database_host' => getenv('DB_SERVER') ?: 'admin-mysql_db',
+    'database_host' => 'mysql_193480',
     'database_port' => '',
-    'database_name' => getenv('DB_NAME') ?: 'BE_19348',
-    'database_user' => getenv('DB_USER') ?: 'root',
-    'database_password' => getenv('DB_PASSWD') ?: 'student',
+    'database_name' => 'BE_19348',
+    'database_user' => 'root',
+    'database_password' => 'student',
     'database_prefix' => 'ps_',
     'database_engine' => 'InnoDB',
     'mailer_transport' => 'smtp',
@@ -13,8 +13,8 @@
     'mailer_user' => NULL,
     'mailer_password' => NULL,
     'secret' => '4DMq2bKyVctIENLZowkzZcmZg4m3Rv3hPrPYpE50iBpsESq1qQAWZtZrvAK0mdET',
-    'ps_caching' => 'CacheMemcache',
-    'ps_cache_enable' => false,
+    'ps_caching' => 'CacheMemcached',
+    'ps_cache_enable' => true,
     'ps_creation_date' => '2024-10-23',
     'locale' => 'pl-PL',
     'use_debug_toolbar' => true,
