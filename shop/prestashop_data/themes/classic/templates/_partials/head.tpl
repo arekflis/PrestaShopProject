@@ -89,3 +89,26 @@
 {/block}
 
 {block name='hook_extra'}{/block}
+
+
+{if $page.page_name == 'index'}
+<!-- My script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      if (window.location.href === "https://localhost:19348/index.php" && !window.location.search) {
+        const bannerElement = document.querySelector(".banner");
+
+        if (bannerElement) {
+          bannerElement.addEventListener('click', function(event) {
+
+            gtag('event', 'banner_click', {
+              'event_category': 'Banner',
+                'event_label': bannerElement.href
+            });
+
+          });
+        }
+      }
+    });
+  </script>
+{/if}
