@@ -1,10 +1,10 @@
 class User:
 
     def __init__(self):
-        self.name = "John"
-        self.surname = "Book"
-        self.mail = "j12fogehnebe2ook1@gmail.com"
-        self.password = "haslo123"
+        self.name = "Testownik"
+        self.surname = "Testowy"
+        self.mail = "testowytestownik@gmail.com"
+        self.password = "password"
         self.dateBirth = "2000-10-10"
         self.address = "Grunwaldzka 241"
         self.postcode = "10-596"
